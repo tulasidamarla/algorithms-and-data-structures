@@ -33,11 +33,12 @@ public class MergeSortDemo {
 		mergeSort(right);
 
 		// Merge the halves together, overwriting the original array
-		merge(left, right, list);
+		merge(left, right, list); // 
 		return list;
 	}
 
 	private static void merge(int[] left, int[] right, int[] result) {
+
 		// Merge both halves into the result array
 		// Next element to consider in the first array
 		int indexLeft = 0;
@@ -49,7 +50,7 @@ public class MergeSortDemo {
 
 		// As long as neither indexFirst nor indexSecond is past the end, move
 		// the smaller element into the result.
-		while (indexLeft < left.length && indexRight < right.length) {
+		while (indexLeft < left.length && indexRight < right.length) { 
 			if (left[indexLeft] < right[indexRight]) {
 				result[j] = left[indexLeft];
 				indexLeft++;
