@@ -7,7 +7,7 @@ Example
 
 	private static int[] insertionSort(int[] a){
 		//starting with second element i.e i=1
-		for(int i=1;i< a.length;i++){ //constant time
+		for(int i=1;i< a.length;i++){ //n times
 			int current=a[i]; // constant time
 			int insertPosition=i; // constant time
 			//find the index to insert
