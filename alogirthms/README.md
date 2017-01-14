@@ -39,6 +39,8 @@ Note: Insert position always validate towards left.
 Analysis
 --------
 
+Time complexity
+---------------
 Insertion Sort can take different amounts of time for two input sequences of the same size depending on how nearly sorted they already are. In general, the time taken by an algorithm grows with the size of the input. Total time for execution is
 
 	c.1 + c.2 + c.3+ ...c.(n-1) = c(n*n-n)/2 ≅ c(n*n-n) ≅ c(n*n) // generally lower order terms are ignored
@@ -47,7 +49,12 @@ The worst case scenario i.e. if elements are in reverse sort order, this algorit
 
 The best time possible .i.e. if elements are in sorted order, this algorithm take Ω(n), because for loop has to traverse through out the length of the array.
 
-	
+Space complexity
+----------------
+This algorithm needs three variables to store key, for outer loop and and for insertion position. so, for space complexity this algorithm is not dependent on the input size. 
+
+The space complexity of insertion sort is order of 1 or O(1).
+
 Merge Sort
 ----------
 Merge sort uses divide and conquer paradigm. It operates as follows.
