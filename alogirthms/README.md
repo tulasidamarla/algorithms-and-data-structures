@@ -2,6 +2,20 @@ Insertion Sort
 --------------
 Insertion sort, solves the sorting problem. It is an efficient algorithm for sorting a small number of elements.Insertion sort works the way many people sort a hand of playing cards. It starts with an empty left hand and the cards face down on the table. We then remove one card at a time from the table and insert it into the correct position in the left hand. To find the correct position for a card, we compare it with each of the cards already in the hand, from right to left. At all times, the cards held in the left hand are sorted, and these cards were originally the top cards of the pile on the table.
 
+Psuedo code
+-----------
+	insertionsort (int[] a){
+		for int i from 1 to a.length
+		key = a[i];
+		//insert this key into a sorted sequence by comparing all elements to its left
+		j = i-1;
+		while( j > 0 and a[j] > key){
+			a[j+1] = a[j];
+			j--;
+		} 
+		a[j] = key;
+	}
+
 Example
 -------
 
@@ -25,7 +39,7 @@ Note: Insert position always validate towards left.
 Analysis
 --------
 
-Insertion Sort can take different amounts of time to sort two input sequences of the same size depending on how nearly sorted they already are. In general, the time taken by an algorithm grows with the size of the input. Total time for execution is
+Insertion Sort can take different amounts of time for two input sequences of the same size depending on how nearly sorted they already are. In general, the time taken by an algorithm grows with the size of the input. Total time for execution is
 
 	c.1 + c.2 + c.3+ ...c.(n-1) = c(n*n-n)/2 ≅ c(n*n-n) ≅ c(n*n) // generally lower order terms are ignored
 	
