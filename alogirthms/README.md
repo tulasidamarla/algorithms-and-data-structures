@@ -42,6 +42,11 @@ Analysis
 Insertion Sort can take different amounts of time for two input sequences of the same size depending on how nearly sorted they already are. In general, the time taken by an algorithm grows with the size of the input. Total time for execution is
 
 	c.1 + c.2 + c.3+ ...c.(n-1) = c(n*n-n)/2 ≅ c(n*n-n) ≅ c(n*n) // generally lower order terms are ignored
+
+The worst case scenario i.e. if elements are in reverse sort order, this algorithm takes O(n^2).
+
+The best time possible .i.e. if elements are in sorted order, this algorithm take Ω(n), because for loop has to traverse through out the length of the array.
+
 	
 Merge Sort
 ----------
