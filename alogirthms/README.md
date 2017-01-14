@@ -59,10 +59,10 @@ Note: If an algorithm has space complexity of O(1), it is called inplace algorit
 
 Merge Sort
 ----------
-Merge sort uses divide and conquer paradigm. It operates as follows.
-Divide: Divide the n-element sequence to be sorted into two subsequences of n/2 elements each.
-Conquer: Sort the two subsequences recursively using merge sort.
-Combine: Merge the two sorted subsequences to produce the sorted answer.
+Merge sort uses divide and conquer paradigm. It operates as follows. <br>
+Divide: Divide the n-element sequence to be sorted into two subsequences of n/2 elements each.<br>
+Conquer: Sort the two subsequences recursively using merge sort.<br>
+Combine: Merge the two sorted subsequences to produce the sorted answer.<br>
 
 	
 
