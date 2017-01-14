@@ -55,6 +55,8 @@ This algorithm needs three variables to store key, for outer loop and and for in
 
 The space complexity of insertion sort is order of 1 or O(1).
 
+Note: If an algorithm has space complexity of O(1), it is called inplace algorithm.
+
 Merge Sort
 ----------
 Merge sort uses divide and conquer paradigm. It operates as follows.
