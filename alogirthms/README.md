@@ -16,8 +16,8 @@ Psuedo code
 		a[j] = key;
 	}
 
-Example
--------
+Implementation
+--------------
 
 	private static int[] insertionSort(int[] a){
 		//starting with second element i.e i=1
@@ -112,5 +112,35 @@ Note: This is called out of place algorithm, because it uses extra memory to sol
 Merge Sort
 ----------
 As mentioned before, Merge sort uses divide and conquer method to sort a given array. It does this using the merge process discussed above. Merge Sort splits the given array recursively until each array contains one element. i.e. If an array contains n elements then merge sort splits the array into n arrays of size 1. It uses merge process from here. In first step, it creates n/2 sorted arrays of each array size 2. In the 2 step, it creates n/4 sorted arrays of each array size 4. It goes on, until the array size becomes n/n. i.e. 1.
+
+Implementation
+--------------
+	
+	private static void mergeSort(int[] list) {
+		if (list.length <= 1) {
+			return;
+		}
+
+		// Split the array in half
+		int[] left = new int[list.length / 2];
+		int[] right = new int[list.length - left.length];
+		
+		// copy left array
+		for (int i = 0; i < left.length; i++) {
+			left[i] = list[i];
+		}
+		// copy right array
+		for (int i = 0; i < right.length; i++) {
+			right[i] = list[i + left.length];
+		}
+
+		// Sort each half
+		mergeSort(left);
+		mergeSort(right);
+
+		// Merge the sorted halves together, using the original array
+		merge(left, right, list); // 
+		
+	}
 
 
