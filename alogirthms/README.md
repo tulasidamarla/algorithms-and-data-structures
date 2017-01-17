@@ -64,5 +64,41 @@ Divide: Divide the n-element sequence to be sorted into two subsequences of n/2 
 Conquer: Sort the two subsequences recursively using merge sort.<br>
 Combine: Merge the two sorted subsequences to produce the sorted answer.<br>
 
+Merge sort works with a procedure called merging. Lets see merging.
+
+Merging is a process of combining two sorted arrays into one sorted array. 
+
+	public void merge(int[] left, int[] right, int[] result){
+
+		int indexLeft=0;
+		int indexRight=0;
+		int j=0;
+		
+		while(indexLeft < left.length && indexRight < right.length){
+			if(left[indexLeft] < right[indexRight]){
+				result[j] = right[indexRight];
+				indexRight++;
+			}else{
+				result[j] = left[indexLeft];
+				indexLeft++;
+			}
+			j++;
+		}
+		//copy what is remaining
+		while(indexLeft < left.length){
+			result[j] = left[indexleft];
+			indexLeft++;
+			j++;
+		}
+		
+		while(indexRight < right.length){
+			result[j] = right[indexRight];
+			indexRight++;
+			j++;
+		}
+		
+	}
 	
+	
+		
 
