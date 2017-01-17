@@ -143,9 +143,19 @@ Implementation
 		
 	}
 
-Space complexity
+Space Complexity
 ----------------
-From merge process, we know space complexity required is O(n). In addition to merging, Mergesort occupies additional space for recursive function calling of mergesort. We know already if the array sizes are halfed in each call, no of recursive calls are of the order of logn. Total space complexity is O(nlogn)
+From merge process, we know space complexity required is O(n). In addition to merging, Mergesort occupies additional space for recursive function calling of mergesort. We know already if the array sizes are halfed in each call, no of recursive calls are of the order of logn. Total space complexity is O(n + logn). i.e. O(n)
 
+Time Complexity
+---------------
+Lets assume that time complexity for solving the problem is T(n). Then T(n) = 2T(n/2) + n.
+n is for merging process. now using back substitution method, 
+	T(n/2) = 2T(n/4) + n/2;  
+
+	T(n) = 2 (2T(n/4) + (n/2)) + n;
+	T(n) = 2^kT(n/2^k) + n/2^k + n/2^k-1  + ....+n
+	
+recursion stops when n/2^k = 1; i.e. T(n) = n(1+1/2+1/2^2+...1/2^n) = nlogn
 
 
