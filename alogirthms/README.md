@@ -74,7 +74,7 @@ Merging is a process of combining two sorted arrays into one sorted array.
 		int indexRight=0;
 		int j=0;
 		
-		while(indexLeft < left.length && indexRight < right.length){
+		while(indexLeft < left.length && indexRight < right.length){ // n times
 			if(left[indexLeft] < right[indexRight]){
 				result[j] = right[indexRight];
 				indexRight++;
@@ -99,6 +99,10 @@ Merging is a process of combining two sorted arrays into one sorted array.
 		
 	}
 	
-	
+Time Complexity
+---------------
+If total no of elements in the result array are n, then for looping through all the elements complexity is O(n) and for copying elements to the result array is O(n). Total time complexity is O(n)+O(n) = O(n).
+
+
 		
 
