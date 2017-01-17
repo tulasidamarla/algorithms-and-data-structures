@@ -105,6 +105,12 @@ If total no of elements in the result array are n, then for looping through all 
 
 Space complexity
 ----------------
-If total no of elements in the left and right array are n, then this mergin needs another array of size n. i.e. Space complexity of this algorithm is O(n).
+If total no of elements in the left and right array are n, then this mergin needs another array of size n. i.e. Space complexity of this algorithm is O(n). 
 		
+Note: This is called out of place algorithm, because it uses extra memory to solve the problem.
+
+Merge Sort
+----------
+As mentioned before, Merge sort uses divide and conquer method to sort a given array. It does this using the merge process discussed above. Merge Sort splits the given array recursively until each array contains one element. i.e. If an array contains n elements then merge sort splits the array into n arrays of size 1. It uses merge process from here. In first step, it creates n/2 sorted arrays of each array size 2. In the 2 step, it creates n/4 sorted arrays of each array size 4. It goes on, until the array size becomes n/n. i.e. 1.
+
 
