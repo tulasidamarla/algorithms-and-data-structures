@@ -103,6 +103,8 @@ Time Complexity
 ---------------
 If total no of elements in the result array are n, then for looping through all the elements complexity is O(n) and for copying elements to the result array is O(n). Total time complexity is O(n)+O(n) = O(n).
 
-
+Space complexity
+----------------
+If total no of elements in the left and right array are n, then this mergin needs another array of size n. i.e. Space complexity of this algorithm is O(n).
 		
 
