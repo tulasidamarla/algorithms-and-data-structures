@@ -143,4 +143,9 @@ Implementation
 		
 	}
 
+Space complexity
+----------------
+From merge process, we know space complexity required is O(n). In addition to merging, Mergesort occupies additional space for recursive function calling of mergesort. We know already if the array sizes are halfed in each call, no of recursive calls are of the order of logn. Total space complexity is O(nlogn)
+
+
 
