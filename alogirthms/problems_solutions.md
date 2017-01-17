@@ -28,4 +28,4 @@ If the following sequence is being sorted using two way merging, what will be th
 
 Solution:
 After 1st round ---> 20 47    8  15    4 9     30 40   12  17
-After 2nd round ---> 8 15 20 47    12 17 30 40
+After 2nd round ---> 8 15 20 47        4 9 30 40       12  17
