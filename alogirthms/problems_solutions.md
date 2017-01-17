@@ -13,7 +13,6 @@ Lets take value of n as 64. i.e. Total no of lists are 8 and each list contains 
 
 So total time complexity including merge process is  ϴ(nloglogn)
 
-
 Problem 2
 ---------
 n strings each of length n are given, then what is the time taken to sort them?
@@ -22,4 +21,11 @@ Solution:
 
 strings are compared using lexicographical order. If we have two numbers say 3 and 5, time taken two compare them is O(1), whereas time taken two compare two strings each of length 'n' is O(n). So, using merge sort, time taken to compare is O(n)*O(nlogn).i.e. O(n^2 logn)
 
+Problem 3
+---------
+If the following sequence is being sorted using two way merging, what will be the order of elements after the 2nd round?
+20 47 15 8 9 4 40 30 12 17
 
+Solution:
+After 1st round ---> 20 47    8  15    4 9     30 40   12  17
+After 2nd round ---> 8 15 20 47    12 17 30 40
