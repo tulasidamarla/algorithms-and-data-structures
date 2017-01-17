@@ -158,4 +158,9 @@ n is for merging process. now using back substitution method,
 	
 recursion stops when n/2^k = 1; i.e. T(n) = n(1+1/2+1/2^2+...1/2^n) = nlogn
 
+so, Time complexity of merge sort is ϴ(nlogn). 
+
+Note:  ϴ is mentioned because it represents average time. For merge sort there is no best case or worst case. i.e. Even if you give a sorted array, it still takes nlogn time.
+
+
 
