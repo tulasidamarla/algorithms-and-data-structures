@@ -162,5 +162,31 @@ so, Time complexity of merge sort is ϴ(nlogn).
 
 Note:  ϴ is mentioned because it represents average time. For merge sort there is no best case or worst case. i.e. Even if you give a sorted array, it still takes nlogn time.
 
+Quick Sort
+-----------
+Merge sort is good for sort large data sets. But, for small data sets it is more complex. For smaller inputs Quick sort works faster than Merge sort. Like Merge sort Quick sort also uses divide and conquer approach. 
 
+Quick sort uses a procedure called partition. Partition procedure chooses a random element from the list of elements and partition the list into two lists in such a way that all the elements to its left are lesser than the this and all the elements to its right are larger than this. This random element is generally taken either from the first, middle or last.
+
+This procedure repeats to the two lists that were created in the first step and so on.
+
+Lets see the partition algorithm with an example. Lets say the list is 9 6 5 0 8 2 4 7
+Lets choose the random number as the last element. i.e. 7. This is also called pivot.
+
+To implement partition we need two pointers say i, j. variable j is to iterate the list from 0 to n-1 where n is the size of the list.
+The value of i starts from -1. while iterating through the list using index j when any element is find smaller than pivot, increment the value of i by 1 and exchange with value at jth index with ith index. 
+
+To understand this, let us iterate throught the list.
+when j=0, value is 9 , which is greater than 7, so leave it as it is. <br>
+when j=1, value is 6 , which is less than 7, so increment i. i.e. i=0 and exchange jth index value with ith index. i.e. 9 and 6. so list now becomes 6 9 5 0 8 2 4 7 <br>
+when j = 2, value is 5, which is less than 7, so increment i. i.e. i = 1 and exchange . i.e. 9 and 5. so list now becomes 6 5 9 0 8 2 4 7 <br>
+when j = 3, value is 0, again it is less than 7, so increment i and exchange. now list is 6 5 0 9 8 2 4 7.
+when j = 4, value is 8, it is greater than 7, hence no change.
+when j = 5, value is 3, which is less than 7, so increment i and exchange. i.e. 6 5 0 2 9 8 4 7
+when j= 6, value is 4, which is less than 7, so increment i and exchange. i.e. 6 5 0 2 4 9 8 7
+
+Now loop stops because j reached n-1 i.e. 6. After the loop is completed i = 4, so exchange 4th element with pivot. now the list is 
+6 5 0 2 4 7 9 8.
+
+From the above list it is clear that 7 is at the right position in the list. i.e. all elements to its left are smaller and all elements to its right are larger than 7. so, now repeat the same procedure for the left list and right list.
 
