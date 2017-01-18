@@ -170,6 +170,8 @@ Quick sort uses a procedure called partition. Partition procedure chooses a rand
 
 This procedure repeats to the two lists that were created in the first step and so on.
 
+Partition
+---------
 Lets see the partition algorithm with an example. Lets say the list is 9 6 5 0 8 2 4 7
 Lets choose the random number as the last element. i.e. 7. This is also called pivot.
 
@@ -189,4 +191,19 @@ Now loop stops because j reached n-1 i.e. 6. After the loop is completed i = 4, 
 6 5 0 2 4 7 9 8.
 
 From the above list it is clear that 7 is at the right position in the list. i.e. all elements to its left are smaller and all elements to its right are larger than 7. so, now repeat the same procedure for the left list and right list.
+
+Psuedo code
+-----------
+	public void method(int[] list, int start, int pivotindex){
+		int i = start - 1;
+		int j = start;
+		int pivot = list[pivotindex];
+		while( j < pivotindex){
+			if(list[j] < pivot){
+				i++;
+				//exchange list[i] with list[j]
+			}
+		}
+		//exchange list[i+1] with pivot(or list[pivotindex]
+	}
 
