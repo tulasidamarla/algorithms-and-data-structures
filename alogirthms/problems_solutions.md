@@ -35,3 +35,11 @@ Problem 4
 The median of n elements can be found in O(n) time. If median is selected as pivot then what is the time complexity of quick sort?
 Solution:
 If median can be found in O(n), then copy the median to the end of the list and run the quick sort using pivot as last element. This will divivde the list into half in each iteration, thus get the best performance of quick sort. i.e. O(nlogn). Total time complexity is O(nlogn) + O(n) ≈ O(nlogn)
+
+Problem 5
+---------
+In quick sort , if n/4 th element is taken as pivot then what is the worst time complexity?
+
+Solution: If n/4th element is taken as pivot element, then T(n) = O(n) + T(n/4) + T(3n/4)
+Using back substitution T(n) ≈ O(nlogn)
+
