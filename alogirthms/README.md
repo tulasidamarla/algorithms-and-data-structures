@@ -194,7 +194,7 @@ From the above list it is clear that 7 is at the right position in the list. i.e
 
 Psuedo code
 -----------
-	public void method(int[] list, int start, int pivotindex){
+	public int method(int[] list, int start, int pivotindex){
 		int i = start - 1;
 		int j = start;
 		int pivot = list[pivotindex];
@@ -205,7 +205,9 @@ Psuedo code
 			}
 		}
 		//exchange list[i+1] with pivot(or list[pivotindex]
+		return i+1;
 	}
+Note: once partitioning is done, this method returns the index position of pivot.
 
 Time complexity
 ---------------
@@ -214,3 +216,17 @@ If a list contains n elements, then for partition algorithm , it takes n compari
 Space complexity
 ----------------
 Partition algorithm won't use any new spaces. so space complexity is O(1).
+
+Quick Sort
+----------
+Lets see how quick sort works using partition. Quick sort takes a list of n elements and partition the list into n lists each of size 1 using recursion. Here is the psuedo code.
+	
+	private static void quicksort(int[] a,int p, int r) {
+		if(p < r){
+			int q=partition(a, p, r);
+			quicksort(a,p,q-1);
+			quicksort(a,q+1,r);
+		}
+	}
+
+
