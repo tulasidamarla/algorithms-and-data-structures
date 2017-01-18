@@ -238,7 +238,7 @@ This is same as merge sort, so Time complexity for quick sort in best case is θ
 	T(n) = T(n-1) + n ; // In worst case pivot may result at the beginning or at the end
 Applying back substitution gives T(n) = n2. so Time complexity for best case is O(n^2)
 
-Note: Worst case time complexity occurs if the list is already sorted.
+Note: Worst case time complexity occurs if the list is already sorted either in asc or desc order.
 
 Space complexity
 ----------------
