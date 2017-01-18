@@ -233,8 +233,10 @@ Time complexity
 ---------------
 
 For partition algorithm we know time complexity is O(n). If, Time complexity for quick sort is T(n), then
-	T(n) = 2*T(n/2) + n;
-This is same as merge sort, so Time complexity for quick sort is O(nlogn)
+	T(n) = 2*T(n/2) + n; // In best case
+This is same as merge sort, so Time complexity for quick sort in best case is θ(nlogn)
+	T(n) = T(n-1) + n ; // In worst case pivot may result at the beginning or at the end
+Applying back substitution gives T(n) = n2. so Time complexity for best case is O(n^2)	
 
 Space complexity
 ----------------
