@@ -207,3 +207,10 @@ Psuedo code
 		//exchange list[i+1] with pivot(or list[pivotindex]
 	}
 
+Time complexity
+---------------
+If a list contains n elements, then for partition algorithm , it takes n comparision to put a pivot element in its right partition. so, time complexity is O(n).
+
+Space complexity
+----------------
+Partition algorithm won't use any new spaces. so space complexity is O(1).
