@@ -29,3 +29,9 @@ If the following sequence is being sorted using two way merging, what will be th
 Solution:
 After 1st round ---> 20 47    8  15    4 9     30 40   12  17
 After 2nd round ---> 8 15 20 47        4 9 30 40       12  17
+
+Problem 4
+---------
+The median of n elements can be found in O(n) time. If median is selected as pivot then what is the time complexity of quick sort?
+Solution:
+If median can be found in O(n), then copy the median to the end of the list and run the quick sort using pivot as last element. This will divivde the list into half in each iteration, thus get the best performance of quick sort. i.e. O(nlogn). Total time complexity is O(nlogn) + O(n) ≈ O(nlogn)
