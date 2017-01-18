@@ -229,4 +229,14 @@ Lets see how quick sort works using partition. Quick sort takes a list of n elem
 		}
 	}
 
+Time complexity
+---------------
 
+For partition algorithm we know time complexity is O(n). If, Time complexity for quick sort is T(n), then
+	T(n) = 2*T(n/2) + n;
+This is same as merge sort, so Time complexity for quick sort is O(nlogn)
+
+Space complexity
+----------------
+If partition results a pivot element to be positioned at the middle of the list, then each partition splits the list into two. In that case space complexity is O(logn).
+In the worst case, if partition results a pivot element to be positioned at the beginning or at the end of the list in each partition, then order of space complexity is O(n).
