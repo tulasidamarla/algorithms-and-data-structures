@@ -12,7 +12,7 @@ Lets see the time complexity for various operations in a sorted and unsorted arr
   <tr>
     <th>List Type</th>
     <th>Insertion</th>
-    <th>Updation</th>
+    <th>Search</th>
     <th>Find Minimum</th>
     <th>Delete Minimum</th>
   </tr>
@@ -26,7 +26,7 @@ Lets see the time complexity for various operations in a sorted and unsorted arr
   <tr>
     <td>Sorted</td>
     <td>O(n)</td>
-    <td>O(n)</td>
+    <td>O(logn)</td>
     <td>O(1)</td>
     <td>O(n)</td>
   </tr>
