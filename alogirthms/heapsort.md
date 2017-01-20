@@ -1,6 +1,6 @@
 
 Lets see the time complexity for various operations in a sorted and unsorted array/list.
-
+<html>
 <head>
 <style>
 table {
@@ -59,3 +59,5 @@ tr:nth-child(even) {
     <td>Italy</td>
   </tr>
 </table>
+</body>
+</html>
