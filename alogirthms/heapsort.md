@@ -1,5 +1,5 @@
 
-Lets see the time complexity for various operations in a sorted and unsorted array/list.
+Lets see the time complexity for various operations in commonly used data structures.
 <html>
 <head>
 <style>
