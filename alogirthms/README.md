@@ -187,7 +187,7 @@ when j = 4, value is 8, it is greater than 7, hence no change.
 when j = 5, value is 3, which is less than 7, so increment i and exchange. i.e. 6 5 0 2 9 8 4 7
 when j= 6, value is 4, which is less than 7, so increment i and exchange. i.e. 6 5 0 2 4 9 8 7
 
-Now loop stops because j reached n-1 i.e. 6. After the loop is completed i = 4, so exchange 4th element with pivot. now the list is 
+Now loop stops because j reached n-1 i.e. 6. After the loop is completed i = 4, so exchange 5th element with pivot. now the list is 
 6 5 0 2 4 7 9 8.
 
 From the above list it is clear that 7 is at the right position in the list. i.e. all elements to its left are smaller and all elements to its right are larger than 7. so, now repeat the same procedure for the left list and right list.
