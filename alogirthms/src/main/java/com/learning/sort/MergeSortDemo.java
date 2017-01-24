@@ -5,14 +5,14 @@ import java.util.Arrays;
 public class MergeSortDemo {
 
 	public static void main(String[] args) {
-		int[] unsorted = { 30, 70, 7, 10, 45, 90, 50,33,20, 110, 35, 120, 65, 15 };
-		int[] sorted = mergeSort(unsorted);
-		System.out.println(Arrays.toString(sorted));
+		int[] array = { 30, 70, 7, 10, 45, 90, 50,33,20, 110, 35, 120, 65, 15 };
+		mergeSort(array);
+		System.out.println(Arrays.toString(array));
 	}
 	
-	private static int[] mergeSort(int[] list) {
+	private static void mergeSort(int[] list) {
 		if (list.length <= 1) {
-			return list;
+			return;
 		}
 
 		// Split the array in half
@@ -34,7 +34,7 @@ public class MergeSortDemo {
 
 		// Merge the halves together, overwriting the original array
 		merge(left, right, list); // 
-		return list;
+		
 	}
 
 	private static void merge(int[] left, int[] right, int[] result) {

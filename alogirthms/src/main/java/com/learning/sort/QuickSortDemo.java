@@ -25,11 +25,13 @@ public class QuickSortDemo {
 	private static int partition(int[] a, int p, int r){
 		int x=a[r];
 		int i=p-1;
-		for(int j = p; j < r;j++){
+		int j = p;
+		while(j < r){
 			if(a[j] < x ){
-				i=i+1;
+				i++;
 				exchangeNumbers(a, i, j);
 			}
+			j++;
 		}
 		//exchange a[i+1] with a[r]
 		exchangeNumbers(a, i+1, r);
