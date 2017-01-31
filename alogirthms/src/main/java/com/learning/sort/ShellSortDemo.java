@@ -35,12 +35,8 @@ public class ShellSortDemo {
 	 
 	    int h =0;
 	    /**
-	     * create sequence of your choice
-	     * 
-	     * In this case 1, 4, 13, 30 so on.
-	     * 
-	     * 
-	     * */
+	     * create sequence of your choice.In this case 1, 4, 13, 30 so on.
+	     * * */
 	    while (h <= array.length) {
 	      h = h * 3 + 1;
 	    }
@@ -54,16 +50,16 @@ public class ShellSortDemo {
 	     * 
 	     * */
 	    while (h > 0) {
-	      for (outer = h; outer < array.length; outer++) {
-	        temp = array[outer];
+	    	outer = h;
+	      while (outer < array.length) {
+	    	temp = array[outer];
 	        inner = outer;
-	 
 	        while (inner > h - 1 && array[inner - h] >= temp) {
 	          array[inner] = array[inner - h];
 	          inner -= h;
 	        }
-	        
 	        array[inner] = temp;
+	        outer++;
 	      }
 	      h = (h - 1) / 3;
 	      System.out.println(Arrays.toString(array));
