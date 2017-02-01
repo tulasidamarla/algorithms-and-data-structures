@@ -1,9 +1,9 @@
-package com.learning.sort;
+package com.learning.general.problems;
 
-public class IntReverseDemo {
-
+public class NumberReverseDemo {
+	
 	public static void main(String[] args) {
-		System.out.println(reverse(3475));
+		System.out.println(reverse(34751));
 	}
 	
 	public static int reverse(int a){

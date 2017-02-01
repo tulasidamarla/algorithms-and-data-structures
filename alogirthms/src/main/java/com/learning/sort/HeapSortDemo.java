@@ -6,16 +6,6 @@ public class HeapSortDemo {
 
 	public static void main(String[] args) {
 
-/*		int[] arr = { 20, 30, 21, 40, 61, 50, 55, 60, 70 };
-
-		System.out.println("original" + Arrays.toString(arr));
-		buildMaxHeap(arr);
-		System.out.println("max heap" + Arrays.toString(arr));
-		int[] remaining = deleteMaximum(arr);
-		System.out.println(" after delete max new max heap is " + Arrays.toString(remaining));
-		increaseValue(remaining, 5, 70);
-		System.out.println(" after increase new max heap is " + Arrays.toString(remaining));
-*/		
 		int[] original = { 20, 30, 21, 40, 61, 50, 55, 60, 70 };
 		System.out.println("unsorted list " + Arrays.toString(original));
 		buildMaxHeap(original);

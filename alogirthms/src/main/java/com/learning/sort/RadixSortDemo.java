@@ -8,7 +8,7 @@ public class RadixSortDemo {
     /*Driver function to check for above function*/
     public static void main (String[] args)
     {
-        int arr[] = {170, 45, 75, 90, 802, 24, 2, 66};
+        int arr[] = {170, 45, 75, 90, 75,802, 24, 2, 66};
         radixSort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -48,5 +48,3 @@ public class RadixSortDemo {
         }
     }
 }
-
-
