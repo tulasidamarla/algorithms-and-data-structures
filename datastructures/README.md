@@ -1,111 +1,21 @@
-Java configuration in spring is the latest model available for wiring the application.
+Linked Lists
+------------
+Linked list is a data structure used for storing collections of data. It has the following properties.
 
-In this we have no application context xml. But we use Java to configure our application. This is generally named as AppConfig. Name doesn't matter. But the class should be annotated with @Configuration.
+i)successive elements are connected by pointers
+ii)Last element points to null
+iii)can grow or shrink in size during the execution of a program
+iv)It does not waste memory but consumes extra memory for pointers.
 
-so, applicationContext.xml file is replaced by class with @Configuration annotation to bootstrap the application. @Configuration is a class level annotation. Spring Beans are defined with @Bean annotation. @Bean is at method level. For ex,
+Note:linked list takes O(n) for accessing an element in the worst case.
 
-
-@Configuration
-
-public class AppConfig {
-
-	@Bean(name = "customerService")
-	public CustomerService getCustomerService(){
-		CustomerService service = new CustomerServiceImpl();
-		service.setCustomerRepository(getCustomerRepository());
-		return service;
-	}
-
-	@Bean(name = "customerRepository")
-	public CustomerRepository getCustomerRepository() {
-		return new CustomerRepositoryImpl();
-	}
-}
-
-For Autowiring, Use ComponentScan Annotation like this:
--------------------------------------------------------
-
-@Configuration
-
-@ComponentScan(basePackages = {"com.springsample"})
-
-public class AppConfigAutowire {
-	
-}
-
-Note: Spring can only Autowire other spring beans. To represent any bean in the application as a spring bean, it needs to be annotated with any of the stereotype annotations like @Component, @Service or @Repository.
-
-Bean Scopes
------------
-Spring uses some standard design patterns like (Singleton, factory etc..) to eliminate developer to write some design patterns manually and run into any issues. There are 5 bean scopes provided by spring.
-
-
-Singleton (one object for the entire context. This is the default behavior)
-Prototype (returns a different object for every invocation)
-Request
-Session
-Global
-
-Request,Session,Global are only used with web aware applications. Singleton is the default. To use these, For ex:
-
-@Service("customerService")
-
-@Scope("singleton")
-
-class CustomerServiceImpl implements CustomerService{}
-
-or 
-
-@Service("customerService")
-
-@Scope(ConfiguraleBeanFactory.SCOPE_SINGLETON)
-
-class CustomerServiceImpl implements CustomerService{}
-
-
-Loading Properties
-------------------
-Properties files can be loaded into the application using XML or Java based configuration. 
-
-XML Configuration
------------------
-<context:property-placeholder location="app.properties"/>
-<bean name="customerRepository" class="com.test.CustomerRepositoryImpl">
-	<property name="dbUserName" value="${dbUserName}"/>
-</bean>
-
-To Use the properties inside Java code using XML configuration,
----------------------------------------------------------------
-XML Configuration
------------------
-&lt;context:property-placeholder location="app.properties"/&gt;
-
-&lt;context: annotation-config/&gt;
-
-Java Code
----------
-
-@Value("${dbUserName}")
-
-private String dbUserName;
-
-To Use the properties inside Java code using Java configuration,
-----------------------------------------------------------------
-
-Java Configuration
+Single Linked Lists
 -------------------
+This list contains a number of nodes in which each node has next pointer to the following and the last node points to null, which indicates the end of the list.
 
-@Configuration
-
-@ComponentScan(basePackages={"com.test"})
-
-@PropertySource("app.properties")
-
-public class AppConfig {
-	
-	@Bean
-	public static PropertySourcesPlaceholderConfigurer getPropertySourcesPlaceholderConfigurer(){
-		return new PropertySourcesPlaceholderConfigurer();
-	}
-}
+Basic operations on a list
+--------------------------
+1)Traversing the list.
+2)Inserting an item in the list.
+3)Deleting an item from the list.
 
