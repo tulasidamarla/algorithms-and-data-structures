@@ -44,6 +44,7 @@ public class BinaryTree<T> {
 	public void printPreorderTraversal(){
 		System.out.println("---------pre order traversal start---------");
 		preorderTraversal(root);
+		System.out.println("");
 		System.out.println("---------pre order traversal end---------");
 	}
 	
@@ -78,11 +79,13 @@ public class BinaryTree<T> {
 				stack.push(temp.getLeft());
 			}
 		}
+		System.out.println("");
 	}
 	
 	public void printLevelOrderTraversal(){
 		System.out.println("----------level order traversal start---------");
 		levelOrderTraversal(root);
+		System.out.println("");
 		System.out.println("----------level order traversal end---------");
 	}
 	

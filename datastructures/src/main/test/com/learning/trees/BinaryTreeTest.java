@@ -27,7 +27,7 @@ public class BinaryTreeTest {
 		namesTree.addToLeft("Swaroopa");
 		namesTree.addToRight("Damarla");
 		
-		//namesTree.printLevelOrderTraversal();
+		namesTree.printLevelOrderTraversal();
 	}
 
 }
