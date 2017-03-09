@@ -2,10 +2,10 @@ Linked Lists
 ------------
 Linked list is a data structure used for storing collections of data. It has the following properties.
 
-i)successive elements are connected by pointers
-ii)Last element points to null
-iii)can grow or shrink in size during the execution of a program
-iv)It does not waste memory but consumes extra memory for pointers.
+i)successive elements are connected by pointers<br>
+ii)Last element points to null<br>
+iii)can grow or shrink in size during the execution of a program<br>
+iv)It does not waste memory but consumes extra memory for pointers.<br>
 
 Note:linked list takes O(n) for accessing an element in the worst case.
 
