@@ -15,9 +15,9 @@ This list contains a number of nodes in which each node has next pointer to the 
 
 Basic operations on a list
 --------------------------
-1)Traversing the list.
-2)Inserting an item in the list.
-3)Deleting an item from the list.
+1)Traversing the list.<br>
+2)Inserting an item in the list.<br>
+3)Deleting an item from the list.<br>
 
 Double Linked Lists
 -------------------
