@@ -128,12 +128,11 @@ Note: Inorder and Postorder tranversal are similar to Preorder. So, hence leavin
 
 Level Order Traversal
 ---------------------
-<<<<<<< HEAD
-Level order traversal traverse elements from root by level. It can be implemented as follows.
-1)visit the root
-2)keep both the children in a queue.
-3)visit the first element in the queue, keep both the children of this in the queue at the end.
-4)repeat this until all levels are completed.
+Level order traversal traverse elements from root by level. It can be implemented as follows.<br>
+1)visit the root<br>
+2)keep both the children in a queue.<br>
+3)visit the first element in the queue, keep both the children of this in the queue at the end.<br>
+4)repeat this until all levels are completed.<br>
 
 	private void levelOrderTraversal(BinaryTreeNode<T> root){
 		Deque<BinaryTreeNode<T>> queue=new ArrayDeque<>();
@@ -209,4 +208,4 @@ Level order traversal traverse elements from root by level. It can be implemente
 2)keep both the children in a queue.<br>
 3)visit the first element in the queue, keep both the children of this in the queue at the end.<br>
 4)repeat this until all levels are completed. <br>
->>>>>>> 7c831bda9ba7883e3ae6513e14d1c4aeaaac082e
+
