@@ -132,4 +132,73 @@ Level order traversal traverse elements from root by level. It can be implemente
 1)visit the root
 2)keep both the children in a queue.
 3)visit the first element in the queue, keep both the children of this in the queue at the end.
-4)repeat this until all levels are completed. 
+4)repeat this until all levels are completed.
+
+	private void levelOrderTraversal(BinaryTreeNode<T> root){
+		Deque<BinaryTreeNode<T>> queue=new ArrayDeque<>();
+		if(root!=null){
+			queue.offer(root);
+			BinaryTreeNode<T> temp=null;
+			while (!queue.isEmpty()) {
+				/*remove the head element and assign it to temp*/
+				temp = queue.poll();
+				// process current node data and add its two children to the queue.
+				System.out.print(temp.getData() + "\t");
+				if (temp.getLeft() != null) {
+					queue.offer(temp.getLeft());
+				}
+				if (temp.getRight() != null) {
+					queue.offer(temp.getRight());
+				}
+			}
+		}
+	} 
+
+Inserting an element
+--------------------
+In Binary Tree we can insert an element wherever we find a node with either left or right child is null.
+	
+	private void insert(BinaryTreeNode<T> root, T data) {
+		Deque<BinaryTreeNode<T>> queue = new ArrayDeque<>();
+		BinaryTreeNode<T> nodeToInsert = new BinaryTreeNode<>(data);
+		if (root == null) {
+			this.root = nodeToInsert;
+		} else {
+			queue.offer(root);
+			BinaryTreeNode<T> temp = null;
+			while (!queue.isEmpty()) {
+				temp = queue.poll();
+				if (temp.getLeft() == null) {
+					temp.setLeft(nodeToInsert);
+					queue.clear();
+					break;
+				} else {
+					queue.offer(temp.getLeft());
+				}
+
+				if (temp.getRight() == null) {
+					temp.setRight(nodeToInsert);
+					queue.clear();
+					break;
+				} else {
+					queue.offer(temp.getRight());
+				}
+			}
+		}
+	}
+
+Finding the Size of a binary tree
+---------------------------------
+	
+	/*Time complexity O(n) and Space complexity is O(n)*/
+	public int size(BinaryTreeNode<T> root){
+		if(root == null){
+			return 0;
+		}else{
+			/* get the size of left node + add 1 for the current node + get the size of right node*/
+			return size(root.getLeft())+1+size(root.getRight());
+		}
+	}
+
+Reverse Level Order Traversal
+-----------------------------
