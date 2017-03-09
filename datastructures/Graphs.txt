@@ -1,0 +1,136 @@
+Graphs
+------
+A graph G is composed of set of vertices (or nodes) and a set of edges connecting to the vertices.
+If set of vertices is V and set of edges are E, then graph G = (V,E).
+
+There are no of use cases of graphs. 
+1)Can model circuits. 
+2)Can take a map of the city and every intersection can be modeled as vertex and roads that join them as edges.
+3)communication networks, transportation networks etc.
+
+There are two types of graphs.
+1)Directed Graph --> A graph in which edges are directed is called Directed graph.
+2)Undirected Graph
+
+Graph Terminology
+-----------------
+1)Adjacent Vertices: vertices connected by an edge
+2)Degree(of a vertex): no of adjacent vertices it has.
+3)Path: Path is a sequence of vertices v1,v2,...vn such that consecutive vertices vi and vi+1 are adjacent.
+4)Simple Path: A simple path is path with no vertex repeated.
+5)Cycle: Cycle is a simple path, except that the last vertex is same as the first vertex.
+6)Connected Graph: If any two vertices are connected by path, then it is connected graph.
+7)Subgraph: subset of vertices and edges forming a graph.
+8)Tree(Free): A tree is a connected graph without any cycles in it. This is not the tree data structure because we don't have notion of root, parent and child here.
+9)Complete Graph: A complete graph is a graph in which there is an edge between every pair of vertices.
+How many edges does a complete graph have?
+Ans: nc2. i.e. n(n-1)/2.
+How many edges does a complete directed graph have?
+Ans: 2*nc2 i.e. n(n-1).
+Minimum no of edges in a graph with n vertices are 0. (Need to understand this)
+
+maximal connected subgraph: A set is called maximal if we cannot increase the size of the set while retaining property.
+
+what is the sum of degrees of all vertices?
+Ans: Twice the no of edges, because adjacent vertices each count the adjoining edge, it will be counted twice.
+
+*****
+Note
+----
+If for two vertices A and B there is an edge e joining them, we say that A and B are adjacent.
+If two edges e and f have a common vertex A, the edges are called incident.
+If the vertex A is on edge e, the vertex A is said to be incident on e.
+
+A connected graph with no cycle(Tree) of n vertices will have n-1 edges. If no of edges are less than n-1 then the graph is not connected.
+If a connected graph with cycle, you cannot make it unconnected just by breaking the cycle.
+
+If a tree has n vertices and n-k edges it will have k connected components in it.
+
+Spanning Tree
+-------------
+A spanning tree of G is a sub graph which is a tree and contains all vertices of G.
+
+Multi Graph
+-----------
+If there is more than one edge between a pair of vertices, then it is called multi graph.
+
+Eulerian Tour: Path that traverses every edge exactly once and returns to the first vertex.
+Euler's Theorm: A graph has a Eulerian Tour if and only if all vertices have even degree.
+
+The Graph ADT
+-------------
+The Graph ADT is a positional container whose positions are vertices and edges of the graph.
+size(),isEmpty(),elements(),position(),swap(),replace(),noOfVertices(),noOfEdges(),
+directedEdges() //enumeration of all directed edges in G
+undirectedEdges(v) // enumeration of all undirected edges in G
+incidentEdges(v) // enumeration of all edges incident on v
+inIncidentEdges(v) // enumeration of all edges entering v
+outIncidentEdges(v) //enumeration of all edges leaving v
+opposite(v,e) // gives the vertex from other end of the edge e of vertex v
+degree(v) // the degree of v
+inDegree(v) // no of edges entering v
+outDegree(v) // no of edges leaving v
+adjacentVertices(v) // enumeration of vertices adjacent to v
+inAdjacentVertices(v) // enumeration of vertices adjacent to v along incoming edges
+outAdjacentVertices(v) // enumeration of vertices adjacent to v along outgoing edges
+areAdjacent(v,w) // weather v and w are adjacent
+endVertices(e) // the end vertices of e
+origin(e) // the end vertex from which e leaves
+desination(e) // the end vertex at which e arrives
+isDirected(e) // true if e is directed
+
+update methods
+--------------
+makeUndirected(e) // Set e to be undirected edge
+reverseDirection(e) // switch the origin and destination vertices of e
+setDirectionFrom(e,v) // Sets the direction of e away from v one of its end vertices.
+
+Mixed graph: A graph in which some edges are directed and some are not. A real time use case for this are roads.
+
+Data structures for graphs
+--------------------------
+1)Edge List: The edge list structure simply stores the vertices and the edges in two unsorted sequences. This is easy to implement.
+Note:Finding the edges incident on a vertex is inefficient because it requires examing the entire edge sequence.
+
+Performance of edge list
+------------------------
+size,isEmpty,replaceElement,swap - O(1)
+numVertices,numEdges - O(1)
+vertices - O(n)
+edges,directedEdges,undirectedEdges - O(m)
+elements,positions - O(m+n)
+endVertices,opposite,origin,destination,isDirected - O(1)
+incidentEdges,inIncidentEdges,outIncidentEdges,adjacentVertices,inAdjacentVertices - O(m)
+outAdjacentVertices,areAdjacent,degree,inDegree,outDegree - O(m)
+insertVertex,insertEdge,insertDirectedEdge,removeEdge,makeUndirected - O(1)
+reverseDirection,setDirectionFrom,setDirectionTo - O(1)
+removeVertex - O(m)
+
+2)Adjacency Lists:
+Adjacency list of a vertex v: sequence of vertices adjacent to v represent the graph by the adjacency lists of all the vertices.
+
+All vertices are placed in an array. All the vertices adjacent to a given vertex is placed in a list, typically linked list. we know no of vertices adjacent to each vertex is called degree of avertex.So, Total space occupied is (n + degree of each vertex) = n + 2m. Total space occupied is equal O(n+m).
+
+Note: In this edges are not stored. For ex, given two vertices and asked to findout if there is an edge between them, we need to traverse the entire list.
+
+Performance of adjacency list
+-----------------------------
+size,isEmpty,replaceElement,swap - O(1)
+numVertices,numEdges - O(1)
+vertices - O(n)
+edges,directedEdges,undirectedEdges - O(m)
+elements,positions - O(m+n)
+endVertices,opposite,origin,destination,isDirected,degree,inDegree,outDegree - O(1)
+incidentEdges,inIncidentEdges,outIncidentEdges,adjacentVertices,inAdjacentVertices - O(degree(v))
+outAdjacentVertices - O(degree(v))
+areAdjacent - O(minDegree(u),degree(v))
+insertVertex,insertEdge,insertDirectedEdge,removeEdge,makeUndirected - O(1)
+reverseDirection,setDirectionFrom,setDirectionTo - O(1)
+removeVertex - O(degree(v))
+
+3)Adjacency Matrix
+Matrix M(two dimensional array) with entries for all pair of vertices. 
+M[i,j] = true means that there is an edge (i,j) in the graph.
+M[i,j] = false means that there is no edge (i,j) in the graph.
+Total space occupied is O(n^2).
+
