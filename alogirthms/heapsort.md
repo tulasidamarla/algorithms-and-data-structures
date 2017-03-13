@@ -69,17 +69,17 @@ To find the parent of a node with index 'i' is i/2.
 
 Note: If an array is in desc order, it is by default max heap. If an array is in asc order, by default it is min heap.
 
-Height of a tree is the no of edges between root node to longest leaf node.
-Hieght of a node is the no of edges between the node and the root node.
-Deapth of a node is the no of edges between the node to its deepest leaf;
+Height of a tree is the no of edges between root node to longest leaf node.<br>
+Hieght of a node is the no of edges between the node to its deepest leaf.<br>
+Deapth of a node is the no of edges between the node and the root node.<br>
 
 For a tree, Height and deapth are same.
 
-For a binary tree, if height of the tree is h, then total no of nodes (1+ 2^0 + 2^1 + ...2^h).
-so max no of nodes in a full binary tree is 2^(h+1)-1.
-If 'n' is the no of nodes of a binary tree, then height of the tree is logn.
+For a binary tree, if height of the tree is h, then total no of nodes (1+ 2^0 + 2^1 + ...2^h).<br>
+so max no of nodes in a full binary tree is 2^(h+1)-1.<br>
+If 'n' is the no of nodes of a binary tree, then height of the tree is logn.<br>
 
-If n is the no of elements then in a complete binary tree leafs exists from  (n/2)+1 to n.
+If n is the no of elements then in a complete binary tree leafs exists from  (n/2)+1 to n.<br>
 All non leaf nodes are present from 0 to n/2. 
 
 All leaf nodes are already either max or min heap.
