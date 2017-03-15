@@ -86,7 +86,8 @@ All leaf nodes are already either max or min heap.
 
 Max heapify
 -----------
-Given a node whose left sub tree and right subtree are already satisfy max heap, to max heapify of the current node
+Given a node whose left sub tree and right subtree already satisfy max heap, to max heapify of the current node using recursive method,
+here is the code.
 	
 	public static void maxHeapify(int[] a, int i, int n) {
 
