@@ -86,7 +86,7 @@ All leaf nodes are already either max or min heap.
 
 Max heapify
 -----------
-The process of building a max heap from an array of elements is max heapify. Here is the code.
+Given a node whose left sub tree and right subtree are already satisfy max heap, to max heapify of the current node
 	
 	public static void maxHeapify(int[] a, int i, int n) {
 
