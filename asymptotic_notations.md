@@ -290,7 +290,7 @@ For recursive algorithms time complexity is calculated using recursive functions
 2)recursion tree method
 3)Masters theorm
 
-We only discuss Back substitution. recursion and masters theorm are beyond the scopr of this tutorial.
+We only discuss Back substitution. 
 
 Back substitution
 -----------------
