@@ -43,11 +43,11 @@ Big theta is actually combination of Big oh and omega, but the function should s
  
 Solution 1 
 ----------
-	keep n0 as 1,but make c2 = 5, c1=3n
+	keep n0 as 1,but make c2 = 5, c1=3
  
 solution 2
 ----------
-	n0 = 2
+	n0 = 2, c1=3 and c2=4
 
 Note
 ----
@@ -98,8 +98,8 @@ The value of s at kth iteration is sum of integers from 1 to k. i.e. at 2nd iter
 
 Suppose if the condition s <= n, is met at kth iteration.i.e. 
 	k(k+1)/2 <= n;
-	k*k+k)/2 <= n;
-	k*k <= n; (ignore lower order terms)
+	(k^2+k)/2 <= n;
+	k^2 <= n; (ignore lower order terms)
 It means k is proportional to √n. 
 
 Answer
@@ -108,9 +108,9 @@ The time complexity of the above problem is O(√n).
 
 Problem 2
 ---------
-	for(int i=1; i2 < n;i++){}
+	for(int i=1; i^2 < n;i++){}
 
-Instead of writing i2 < 2, we can write i < √n .i.e. time complexity O(√n).
+Instead of writing i^2 < n, we can write i < √n .i.e. time complexity O(√n).
 
 Note:In the above problem , The best , worst and average cases are same, so we can write θ(√n).
 	
