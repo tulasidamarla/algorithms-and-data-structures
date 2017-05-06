@@ -204,7 +204,7 @@ Answer:
 -------
 The time complexity of the problem is O(n*n*log2(n))
 
-Problem 6
+Problem 7
 ---------
 	int i,j,k,n;
 	for(int i=n/2; i<= n; i++){ //n/2 times
@@ -231,7 +231,7 @@ Note: To achieve the log(n) complexity using for loop(or while loop) in reverse 
 
 The above two loops also have time complexity of log2(n)
 
-Problem 7
+Problem 8
 ---------
 	
 	for(int i=1; i<= n; i++){ 
@@ -253,7 +253,7 @@ Answer:
 -------
 The time complexity of the problem is O(nlogn)
 
-Problem 8
+Problem 9
 ---------
 	int n=2^2^k;
 	for(int i=1; i<= n; i++){ 
