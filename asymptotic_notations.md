@@ -160,7 +160,7 @@ j -->	1	4		9		16		...n
 k -->	n/2	4n/2		9n/2		16n/26		...(n^2*n)/2
 
 Total time complexity for an input size of n is 
-	n/2 + n/2*4 +n/2*9 ....n/2*(n*n) = n/2(1+2*2+3*3+ ...n*n) = (n/2)*(n)(n+1)(2n+1)/6
+	n/2 + 4n/2 + 9n/2 ....(n^2)*n/2 = n/2(1+2*2+3*3+ ...n*n) = (n/2)*(n)(n+1)(2n+1)/6
 
 Answer
 ------	
