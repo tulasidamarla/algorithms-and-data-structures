@@ -43,11 +43,11 @@ Big theta is actually combination of Big oh and omega, but the function should s
  
 Solution 1 
 ----------
-	keep n0 as 1,but make c2 = 5, c1=3n
+	keep n0 as 1,but make c2 = 5, c1=3
  
 solution 2
 ----------
-	n0 = 2
+	n0 = 2, c1=3 and c2=4
 
 Note
 ----
@@ -98,8 +98,8 @@ The value of s at kth iteration is sum of integers from 1 to k. i.e. at 2nd iter
 
 Suppose if the condition s <= n, is met at kth iteration.i.e. 
 	k(k+1)/2 <= n;
-	k*k+k)/2 <= n;
-	k*k <= n; (ignore lower order terms)
+	(k^2+k)/2 <= n;
+	k^2 <= n; (ignore lower order terms)
 It means k is proportional to √n. 
 
 Answer
@@ -108,9 +108,9 @@ The time complexity of the above problem is O(√n).
 
 Problem 2
 ---------
-	for(int i=1; i2 < n;i++){}
+	for(int i=1; i^2 < n;i++){}
 
-Instead of writing i2 < 2, we can write i < √n .i.e. time complexity O(√n).
+Instead of writing i^2 < n, we can write i < √n .i.e. time complexity O(√n).
 
 Note:In the above problem , The best , worst and average cases are same, so we can write θ(√n).
 	
@@ -157,10 +157,10 @@ Lets observe the values of i,j,k with input size n.
 
 i -->	1	2		3		4		...n
 j -->	1	4		9		16		...n
-k -->	n/2	n/2*4	n/2*9	n/2*16	...n/2*n2
+k -->	n/2	4n/2		9n/2		16n/26		...(n^2*n)/2
 
 Total time complexity for an input size of n is 
-	n/2 + n/2*4 +n/2*9 ....n/2*(n*n) = n/2(1+2*2+3*3+ ...n*n) = (n/2)*(n)(n+1)(2n+1)/6
+	n/2 + 4n/2 + 9n/2 ....(n^2)*n/2 = n/2(1+2*2+3*3+ ...n*n) = (n/2)*(n)(n+1)(2n+1)/6
 
 Answer
 ------	
@@ -231,7 +231,7 @@ Note: To achieve the log(n) complexity using for loop(or while loop) in reverse 
 
 The above two loops also have time complexity of log2(n)
 
-Problem 7
+Problem 8
 ---------
 	
 	for(int i=1; i<= n; i++){ 
@@ -253,7 +253,7 @@ Answer:
 -------
 The time complexity of the problem is O(nlogn)
 
-Problem 8
+Problem 9
 ---------
 	int n=2^2^k;
 	for(int i=1; i<= n; i++){ 
@@ -290,11 +290,12 @@ For recursive algorithms time complexity is calculated using recursive functions
 2)recursion tree method
 3)Masters theorm
 
-We only discuss Back substitution. recursion and masters theorm are beyond the scopr of this tutorial.
+We only discuss Back substitution. 
 
 Back substitution
 -----------------
 For ex, we have an algorithm like this.
+	
 	public int calc(int n){
 		if(n > 1){
 			return calc(n-1);
