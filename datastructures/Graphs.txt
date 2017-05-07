@@ -41,7 +41,7 @@ If for two vertices A and B there is an edge e joining them, we say that A and B
 If two edges e and f have a common vertex A, the edges are called incident.
 If the vertex A is on edge e, the vertex A is said to be incident on e.
 
-A connected graph with no cycle(Tree) of n vertices will have n-1 edges. If no of edges are less than n-1 then the graph is not connected.
+A connected graph with no cycle(or a Tree) of n vertices will have n-1 edges. If no of edges are less than n-1 then the graph is not connected.
 If a connected graph with cycle, you cannot make it unconnected just by breaking the cycle.
 
 If a tree has n vertices and n-k edges it will have k connected components in it.
@@ -89,7 +89,9 @@ Mixed graph: A graph in which some edges are directed and some are not. A real t
 
 Data structures for graphs
 --------------------------
+
 1)Edge List: The edge list structure simply stores the vertices and the edges in two unsorted sequences. This is easy to implement.
+
 Note:Finding the edges incident on a vertex is inefficient because it requires examing the entire edge sequence.
 
 Performance of edge list
@@ -107,11 +109,16 @@ reverseDirection,setDirectionFrom,setDirectionTo - O(1)
 removeVertex - O(m)
 
 2)Adjacency Lists:
+
 Adjacency list of a vertex v: sequence of vertices adjacent to v represent the graph by the adjacency lists of all the vertices.
 
-All vertices are placed in an array. All the vertices adjacent to a given vertex is placed in a list, typically linked list. we know no of vertices adjacent to each vertex is called degree of avertex.So, Total space occupied is (n + degree of each vertex) = n + 2m. Total space occupied is equal O(n+m).
+All vertices are placed in an array. All the vertices adjacent to a given vertex is placed in a list, typically linked list. we know no of vertices adjacent to each vertex is called degree of a vertex.So, Total space occupied is (n + degree of each vertex) = n + 2m. Total space occupied is equal O(n+m).
+
+Note: Finding out all the vertices adjacent to a given vertex is easy. It takes order of degree.
 
 Note: In this edges are not stored. For ex, given two vertices and asked to findout if there is an edge between them, we need to traverse the entire list.
+
+Note:Modern adjacency list implement combine edge list and adjacency list. Given an edge finding out the vertices incident to it easy in the modern implementation.
 
 Performance of adjacency list
 -----------------------------
@@ -134,3 +141,48 @@ M[i,j] = true means that there is an edge (i,j) in the graph.
 M[i,j] = false means that there is no edge (i,j) in the graph.
 Total space occupied is O(n^2).
 
+Performance of Adjacency matrix
+-------------------------------
+size,isEmpty,replaceElement,swap - O(1)
+numVertices,numEdges - O(1)
+vertices - O(n)
+edges,directedEdges,undirectedEdges - O(m)
+elements,positions - O(m+n)
+endVertices,opposite,origin,destination,isDirected,degree,inDegree,outDegree - O(1)
+incidentEdges,inIncidentEdges,outIncidentEdges,adjacentVertices,inAdjacentVertices - O(n)
+outAdjacentVertices - O(n)
+areAdjacent - O(1)
+insertEdge,insertDirectedEdge,removeEdge,makeUndirected - O(1)
+reverseDirection,setDirectionFrom,setDirectionTo - O(1)
+insertVertex,removeVertex - O(n^2) (n^2 because you need to copy the entire array)
+
+Note: Adding a new vertex needs adding a new row and new column, which is not very efficient.
+Note:Modern Adjacency matrix keep edge information instead of true/false.
+
+Note:Given a vertex, to findout all the vertices which are adjacent to it, it takes O(n) not degree.
+
+Which data structure is preferred when?
+Ans: when space is not an issue, Adjacency matrix is the best solution. Standard implementation used is Adjacency list.
+
+Graph Searching Algorithms
+--------------------------
+Graph Searching algorithm is a mechanism for visiting all the vertices of a graph in some systematic manner. We assume adjacency list.
+
+Breadth First Search
+--------------------
+A BFS traverses a connected component of a graph, and in doing so defines a spanning tree with several useful properties.
+
+1)BFS is an undirected graph G  is like wandering in a maze field with a string(or rope).
+2)BFS starts with a vertex say s, which is assigned a distance 0(like anchor).
+3)In the first round, the string is unrolled the length of one edge, and all the vertices which are one edge away from the anchor are visited, and assigned distances of 1.
+4)In the second round,all the new vertices that can be reached by unrolling the string 2 edges are visited and assigned a distance of 2.
+5)This is continued until every vertex has been assigned a level.
+
+Note: The label of any vertex v corresponds to the length of the shortest path from s to v.
+
+BFS properties
+--------------
+1)Given an undirected graph G = (V,E),BFS discovers all vertices reachable from a source vertex s.
+2)For each vertex v at level i(distance from s),the path of BFS tree T between s and v has i edges, and any other path of G between s and v has atleast i edges.
+3)If(u,v) is an edge then the level numbers of u and v differ by atleast one.
+4)It computes the shortest path to all reachable vertices.

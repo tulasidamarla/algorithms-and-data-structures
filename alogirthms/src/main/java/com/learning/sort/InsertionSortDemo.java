@@ -10,16 +10,14 @@ public class InsertionSortDemo {
 	}
 
 	private static int[] insertionSort(int[] a){
-		//starting with second element i.e i=1
-		for(int i=1;i< a.length;i++){
-			int current=a[i];
-			int insertPosition=i;
-			//find the index to insert
+		for(int i=1;i<a.length;i++){
+			int current = a[i];
+			int insertPosition = i;
 			while(insertPosition > 0 && a[insertPosition-1] > current){
-				a[insertPosition]=a[insertPosition-1];
+				a[insertPosition] = a[insertPosition-1];
 				insertPosition--;
 			}
-			a[insertPosition]=current;
+			a[insertPosition] = current;
 		}
 		return a;
 	}
