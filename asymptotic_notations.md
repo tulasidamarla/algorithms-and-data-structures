@@ -295,6 +295,7 @@ We only discuss Back substitution.
 Back substitution
 -----------------
 For ex, we have an algorithm like this.
+	
 	public int calc(int n){
 		if(n > 1){
 			return calc(n-1);
