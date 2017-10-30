@@ -411,7 +411,7 @@ Before finding Space complexity lets see the Time complexity first. Time complex
 This program executes like a binary tree with left node gets executed first until the condition (n > 1) is satisfied. Then it prints the value of n, then right node is executed. Lets take n value of 2.
 
 The tree would be like this. sort(2) --> sort(1) --> 2 --> sort(1)
-o/p : 2 (because sort(1) is not getting executed because n should be greater than 1)
+o/p : 2 (sort(1) won't execute because of the exit condition n > 1)
 
 No of times sort() method is called for n value of 2 is 3.
 
