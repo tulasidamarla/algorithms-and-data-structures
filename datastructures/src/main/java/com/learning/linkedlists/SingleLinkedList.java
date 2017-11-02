@@ -1,6 +1,5 @@
 package com.learning.linkedlists;
 
-import java.awt.List;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -286,10 +285,11 @@ public class SingleLinkedList<T> {
 			count--;
 		}
 
-		// next points to k+1th node
+		// next points to k+1 th node
 		if (next != null) {
 			head.next = reverseKnodesRecursive(next, k);
 		}
+		
 		// return the head node
 		return previous;
 	}
@@ -499,7 +499,7 @@ public class SingleLinkedList<T> {
 		return fastPointer.data;
 	}
 
-	public int lengthOfTheLoop() {
+	/*public int lengthOfTheLoop() {
 		Node<T> fastPointer = head;
 		Node<T> slowPointer = head;
 		boolean hasCycle = false;
@@ -525,11 +525,10 @@ public class SingleLinkedList<T> {
 		} while (slowPointer != fastPointer);
 
 		return counter;
-	}
+	}*/
 
 	public void evenAndOddNodesTogether() {
 		head = evenAndOddNodesTogether(head);
-		
 	}
 
 	private Node<T> evenAndOddNodesTogether(Node<T> head) {
