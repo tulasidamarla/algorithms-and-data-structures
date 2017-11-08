@@ -205,10 +205,10 @@ pattern p -> a b c d a b c y
 				   
 3)Now characters a and a matched, b and b matched, c and c matched, d and d matched, a and a matched, b and b matched, x and c not mached.
 
-				                 |  
+				     |  
 		Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
 		pattern p ->         a b c d a b c y
- 			               	         |
+ 			             |
 					     
 4)Now characters in p, before c are 'a b c d a b'. In this the 'a b' is satisfying the lps property. so skip, 'a b' in p and start comparing 3rd character 'c' with x in t. 
 
