@@ -229,10 +229,10 @@ pattern p -> a b c d a b c y
 
 7) all characters are matching until the last character. i.e. d and y are not matching. so characters before 'y' in p are 'a b c d a b c'. This satisfies the lps property for the characters 'a b c'. so skip 3 characters in p and start comparing 'd' in p with 'd' in t.
 
-								 |
+								  |
 		Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
-		pattern p ->                    	   a b c d a b c y
-								 |
+		pattern p ->                    	    a b c d a b c y
+								  |
 
 8)now all characters matching from d to y in both t and p.
 
