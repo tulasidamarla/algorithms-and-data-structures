@@ -160,3 +160,23 @@ Time complexity: In the worst case, each substring hash matches with the pattern
 Note: This algorithm best suites, say if we have hundreds of documents and if we want to match the documents with a specific document, then we generate the hash for the required document and compare with others.
 
 Note: Another scenario is, if given a text like 'abcgabcflmxyz' and we want to check if multple patterns 'abc','gab','xyz' are matching in the text, then this algorithm is best suited.
+
+Rabin-Karp Vs Brute-Force/Naive
+-------------------------------
+If the hashing function is quick enough, then Rabin-Karp algorithm is faster. 
+
+*****
+Note: Rabin-Karp algorithm also works by sliding one character at a time. If hashing takes time, or if too many substrings matching the pattern hash then the performance could be worse than Brute-Force algorithm.
+
+KMP Pattern
+-----------
+KMP means Knutt-Morris-Pratt. This algorithm uses degenerating property of the pattern and improves the worst case complexity to O(n).
+
+Degenerating pattern, means pattern having same sub-patterns appearing more than. For ex, if pattern is 'abdab', where 'ab' is the sub-pattern appeared twice.
+
+This algorithm pre-process the pattern string before searching it in main text. Preprocess involves constructing an lps array corresponding to pattern, with the same size as pattern.
+
+lps stands for longest proper prefix which is also suffix. For ex, proper prefixes of 'abc' are 'a' and 'ab'. similarly proper suffixes of 'abc' are 'c' and 'bc'.
+
+Note: full pattern 'abc' is not considered either for prefix or suffix.
+
