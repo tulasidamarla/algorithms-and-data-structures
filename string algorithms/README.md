@@ -172,7 +172,7 @@ KMP Pattern
 -----------
 KMP means Knutt-Morris-Pratt. This algorithm uses degenerating property of the pattern and improves the worst case complexity to O(n).
 
-Degenerating pattern, means pattern having same sub-patterns appearing more than. For ex, if pattern is 'abdab', where 'ab' is the sub-pattern appeared twice.
+Degenerating pattern, means pattern having same sub-patterns appearing more than once. For ex, if pattern is 'abdab', where 'ab' is the sub-pattern appeared twice.
 
 Note: KMP algorithm gives the time complexity O(m+n). But, pattern should satisfy the lps property.
 
