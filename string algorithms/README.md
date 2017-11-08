@@ -187,7 +187,11 @@ Consider the below example to understand lps.
 Text t -> a b c x a b c d a b x a b c d a b c d a b c y
 pattern p -> a b c d a b c y
 
-1)Starting from index 0 in t, first three characters are matching with p. But, 3rd index in t has x which is not matching with 3rd index of p, which has d. So, when there is a mismatch occurs howmany characters we can skip to start comparing in t. Howmany characters to skip depends on the previous characters in p before d. i.e. abc. so the substring 'abc' is not statisfying lps i.e. it has no prefix which is also a suffix. so, next match can start from character x and index 0 in pattern. Here is the 
+1)
+  a)Starting from index 0 in t, first three characters are matching with p. <br>
+  b)3rd index in t has x which is not matching with 3rd index of p, which has d. <br>
+  c)hen there is a mismatch occurs no of characters to skip in t depends on no of previous characters in p. In this case no of previous characters in p before d. i.e. 'a b c'. 
+  d) check if substring 'abc' is satisfying lps property. 'a b c' not statisfying lps i.e. it has no prefix which is also a suffix. so, next match can start from character x and index 0 in pattern. Here is the 
 				
 	Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
 	pattern p -> a b c d a b c y
