@@ -189,38 +189,50 @@ pattern p -> a b c d a b c y
 
 1)Starting from index 0 in t, first three characters are matching with p. But, 3rd index in t has x which is not matching with 3rd index of p, which has d. So, when there is a mismatch occurs howmany characters we can skip to start comparing in t. Howmany characters to skip depends on the previous characters in p before d. i.e. abc. so the substring 'abc' is not statisfying lps i.e. it has no prefix which is also a suffix. so, next match can start from character x and index 0 in pattern. Here is the 
 				
-Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
-pattern p -> a b c d a b c y
+	Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
+	pattern p -> a b c d a b c y
 			 	
 2)x is compared with a, no match. so move to next character.
+
 				   |
-Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
-pattern p ->       a b c d a b c y
+		Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
+		pattern p ->       a b c d a b c y
  			 	   |
+				   
 3)Now characters a and a matched, b and b matched, c and c matched, d and d matched, a and a matched, b and b matched, x and c not mached.
+
 				                 |  
-Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
-pattern p ->         a b c d a b c y
- 			             	     |
+		Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
+		pattern p ->         a b c d a b c y
+ 			               	         |
+					     
 4)Now characters in p, before c are 'a b c d a b'. In this the 'a b' is satisfying the lps property. so skip, 'a b' in p and start comparing 3rd character 'c' with x in t. 
-				                 |  
-Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
-pattern p ->                 a b c d a b c y
- 			             	     |						 
+
+						 |  
+		Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
+		pattern p ->                 a b c d a b c y
+ 					         |						 
+					     
 5)x and c are not matching. before the character 'c' in 'p' we have 'a b'. no lps property satisfied here. so, start comparing x with a. 
-				                 |  
-Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
-pattern p ->                     a b c d a b c y
- 			             	     |
+
+						 |  
+		Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
+		pattern p ->                     a b c d a b c y
+					         |
+
 6)x and a not matching. so skip one character and then compare.
-				                   |  
-Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
-pattern p ->                       a b c d a b c y
- 			             	       |
+
+						   |  
+		Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
+		pattern p ->                       a b c d a b c y
+						   |
+
 7) all characters are matching until the last character. i.e. d and y are not matching. so characters before 'y' in p are 'a b c d a b c'. This satisfies the lps property for the characters 'a b c'. so skip 3 characters in p and start comparing 'd' in p with 'd' in t.
-				                                 |
-Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
-pattern p ->                       		   a b c d a b c y
- 			             	                     |
+
+								 |
+		Text    t -> a b c x a b c d a b x a b c d a b c d a b c y
+		pattern p ->                    	   a b c d a b c y
+								 |
+
 8)now all characters matching from d to y in both t and p.
 
