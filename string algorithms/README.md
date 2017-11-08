@@ -184,7 +184,7 @@ Note: full pattern 'abc' is not considered either for prefix or suffix.
 
 Consider the below example to understand lps. 
 
-Text t -> a b c x a b c d a b x a b c d a b c d a b c y
+Text t -> a b c x a b c d a b x a b c d a b c d a b c y <br>
 pattern p -> a b c d a b c y
 
 1)
