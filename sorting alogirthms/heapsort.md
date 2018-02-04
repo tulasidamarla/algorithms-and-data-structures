@@ -86,8 +86,7 @@ All leaf nodes are already either max or min heap.
 
 Max heapify
 -----------
-Given a node whose left sub tree and right subtree already satisfy max heap, to max heapify of the current node using recursive method,
-here is the code.
+Given a node whose left sub tree and right subtree already satisfy max heap, then to max heapify of the current node using recursive method,here is the code. 
 	
 	public static void maxHeapify(int[] a, int i, int n) {
 
@@ -112,6 +111,8 @@ here is the code.
 
 	}
 
+Note: It is very important to note the left subtree and right subtree are already satisfying the max heapify.
+
 Time complexity:
 ----------------
 For each level of heap, it requires to comparisions.(i.e with left and right). so to bring down an element from top node to deepest node, it requires 2*logn, because logn is the height of the tree. so, time complexity is approximately logn.
@@ -124,7 +125,8 @@ For recursive calling of methods, the worst space complexity is upto logn.
 
 Build Max Heap
 --------------
-To build a max heap using max heapify algorithm, the max heapify algorithm has to run from last non leaf node to the root of the tree. 
+We know all leaf nodes satisfy by default satisfy either max heap or min heap conditions. So, to build a max heap using max heapify algorithm, the max heapify algorithm has to run from last non leaf node to the root of the tree. 
+
 
 	public static void buildMaxHeap(int[] arr){
 		for(int i=arr.length/2; i >= 0; i--){
