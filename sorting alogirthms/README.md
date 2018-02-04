@@ -172,19 +172,19 @@ This procedure repeats to the two lists that were created in the first step and 
 
 Partition
 ---------
-Lets see the partition algorithm with an example. Lets say the list is 9 6 5 0 8 2 4 7
-Lets choose the random number as the last element. i.e. 7. This is also called pivot.
+Lets see the partition algorithm with an example. Lets say the list is 9 6 5 0 8 2 4 7<br>
+Lets choose the random number as the last element. i.e. 7. This is also called pivot.<br>
 
 To implement partition we need two pointers say i, j. variable j is to iterate the list from 0 to n-1 where n is the size of the list.
 The value of i starts from -1. while iterating through the list using index j when any element is find smaller than pivot, increment the value of i by 1 and exchange with value at jth index with ith index. 
 
-To understand this, let us iterate throught the list.
+To understand this, let us iterate throught the list.<br>
 when j=0, value is 9 , which is greater than 7, so leave it as it is. <br>
 when j=1, value is 6 , which is less than 7, so increment i. i.e. i=0 and exchange jth index value with ith index. i.e. 9 and 6. so list now becomes 6 9 5 0 8 2 4 7 <br>
 when j = 2, value is 5, which is less than 7, so increment i. i.e. i = 1 and exchange . i.e. 9 and 5. so list now becomes 6 5 9 0 8 2 4 7 <br>
-when j = 3, value is 0, again it is less than 7, so increment i and exchange. now list is 6 5 0 9 8 2 4 7.
-when j = 4, value is 8, it is greater than 7, hence no change.
-when j = 5, value is 3, which is less than 7, so increment i and exchange. i.e. 6 5 0 2 9 8 4 7
+when j = 3, value is 0, again it is less than 7, so increment i and exchange. now list is 6 5 0 9 8 2 4 7.<br>
+when j = 4, value is 8, it is greater than 7, hence no change.<br>
+when j = 5, value is 3, which is less than 7, so increment i and exchange. i.e. 6 5 0 2 9 8 4 7<br>
 when j= 6, value is 4, which is less than 7, so increment i and exchange. i.e. 6 5 0 2 4 9 8 7
 
 Now loop stops because j reached n-1 i.e. 6. After the loop is completed i = 4, so exchange 5th element with pivot. now the list is 
