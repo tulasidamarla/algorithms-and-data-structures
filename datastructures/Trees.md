@@ -26,7 +26,8 @@ Types of binary trees:
 ----------------------
 1)Strict binary tree: A tree is called strict binary tree if each node has exactly two children or no children.<br>
 2)Full binary tree: If each node has exactly two children and all leaf nodes are at same level.<br>
-3)Complete binary tree: If we give numbering for the nodes starting at root then we get a complete sequence from 1 to number of nodes in the tree. while traversing we give numbering to NULL pointers also. so, a binary tree said to be complete binary tree, if all leaf nodes are at height h and also without missing any number in the sequence.
+3)Complete binary tree: A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.
+![full binary](FullBinary.jpg)		![comple binary](CompleteBinary.jpg)
 
 Properties of a Binary tree
 ---------------------------
