@@ -37,4 +37,10 @@ Note: In general, lower values of n are discarded. That means rate of growth at 
 
 Efficiency of an Algorithm:
 ---------------------------
-Insertion sort, takes time roughly equal to c1*n*n to sort n items, where c1 is a constant that does not depend on n. That is, it takes time roughly proportional to n*n . The second, merge sort, takes time roughly equal to c2nlog(n), where log(n) stands for log(n) with base 2 and c2 is another constant that also does not depend on n. Insertion sort typically has a smaller constant factor than merge sort, so that c1 < c2. The constant factors can have far less of an impact on the running time than the dependence on the input size n. It is evident that insertion sort has a factor of n in its running time, whereas merge sort has a factor of log n, which is much smaller. (For example, when n is 1000, lg n is approximately 10, and when n equals one million, lg n is approximately only 20.).No matter how much smaller c1 is than c2 , there will always be a crossover point beyond which merge sort is faster.
+Insertion sort, takes time roughly equal to c1*n*n to sort n items, where c1 is a constant that does not depend on n. That is, it takes time roughly proportional to n*n . 
+
+The second, merge sort, takes time roughly equal to c2nlog(n), where log(n) stands for log(n) with base 2 and c2 is another constant that also does not depend on n. 
+
+Insertion sort typically has a smaller constant factor than merge sort, so that c1 < c2. The constant factors can have far less of an impact on the running time than the dependence on the input size n. 
+
+It is evident that insertion sort has a factor of n in its running time, whereas merge sort has a factor of log n, which is much smaller. (For example, when n is 1000, lg n is approximately 10, and when n equals one million, lg n is approximately only 20.).No matter how much smaller c1 is than c2 , there will always be a crossover point beyond which merge sort is faster.
