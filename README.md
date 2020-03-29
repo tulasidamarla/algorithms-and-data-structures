@@ -37,7 +37,7 @@ Note: In general, lower values of n are discarded. That means rate of growth at 
 
 Efficiency of an Algorithm:
 ---------------------------
-Insertion sort, takes time roughly equal to c1*n*n to sort n items, where c1 is a constant that does not depend on n. That is, it takes time roughly proportional to n*n . 
+Insertion sort, takes time roughly equal to c1*n^2 to sort n items, where c1 is a constant that does not depend on n. That is, it takes time roughly proportional to n^2 . 
 
 The second, merge sort, takes time roughly equal to c2nlog(n), where log(n) stands for log(n) with base 2 and c2 is another constant that also does not depend on n. 
 
