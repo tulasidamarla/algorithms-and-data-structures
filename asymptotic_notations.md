@@ -2,7 +2,7 @@ algorithms
 ----------
 To solve a specific problem p1, there might be many solutions(algorithms) possible. We need to analyze which among those algorithms is efficient in terms of time and memory. i.e. less time and less memory consumption.
 
-Analysis of an algorithms are expressed using Asymptotic notation. There are three types of asymptotic notations.
+Analysis of algorithms are expressed using Asymptotic notation. There are three types of asymptotic notations.
 
 Big(oh) --> O 
 -------------
