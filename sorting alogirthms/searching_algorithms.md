@@ -4,9 +4,9 @@ We Know today's computers store lot of information. To retreive the data profici
 
 Types of Searching
 ------------------
--Linear Search(works with all types of collections)
--Binary Search(works with sorted collection of elements)
--Interpolation Search(Improved version of Binary Search for equally distributed data sets)
--Symbol Tables and Hashing
--String Searching Algorithms(Tries, Ternary Search and Suffix trees)
+Linear Search(works with all types of collections)  
+Binary Search(works with sorted collection of elements)  
+Interpolation Search(Improved version of Binary Search for equally distributed data sets)  
+Symbol Tables and Hashing  
+String Searching Algorithms(Tries, Ternary Search and Suffix trees)
 
