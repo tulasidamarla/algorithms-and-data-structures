@@ -33,7 +33,7 @@ Types of binary trees:
 
 Properties of a Binary tree
 ---------------------------
-i)In a Full binary tree no of elements at level 0 are 2^0, level 1 are 2^1 and at level h are 2^h. The no of nodes in a complete binary tree with height h are 2^0+2^1+2^2 ....2^h=2^(h+1)-1.<br>
+i)In a Full binary tree no of elements at level 0 are 2^0, level 1 are 2^1 and at level h are 2^h. The no of nodes in a complete binary tree with height h are 2<sup>0</sup>+2^1+2^2 ....2^h=2^(h+1)-1.<br>
 ii)The no of nodes in a complete binary tree is between 2^h(minimum) and 2^(h+1)-1(maximum).<br>
 iii)The no of leaf nodes in a full binary tree are 2^h.<br>
 iv)The no of NULL links in a complete binary tree of n nodes are n+1.<br>
