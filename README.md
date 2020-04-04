@@ -60,18 +60,16 @@ ALGORITHMS
 	
 		<i> Example </i>
 		
-		f(n) = 3n + 2
-		3n + 2 <= cn (This condition will be satisfied if c >= 4, we choose 4 because that is closest)
-		3n + 2 <= 4n
-		n >= 2
+		f(n) = 3n + 2  
+		3n + 2 <= cn (This condition will be satisfied if c >= 4, we choose 4 because that is closest)  
+		3n + 2 <= 4n  
+		n >= 2  
 		
 		It means that the constant c is 4 and n0 is 2. i.e. The function 4n is always greater than 3n+2 when n >= 2
 
 		<i>Conclusion</i>
 
 		If f(n) = 3n +2 and g(n) = n, then f(n) = O(g(n)). It means that f(n) is always lessthan some constant multiplied by g(n), which is nothing but upper bound of f(n).
-
-- Asymptotic Notation
 
 
 Sorting algorithms
