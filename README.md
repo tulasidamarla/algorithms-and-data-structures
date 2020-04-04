@@ -1,3 +1,90 @@
+DATA STRUCTURES
+-
+ - Particular way of storing and organizing data in a computer so that it can be used efficiently
+ - Facilitates access and modifications
+ - Types
+	- Linear (accessed in sequential order, may or may not be stored in sequential memory locations)
+		Eg: Linked Lists, Stacks, Queues, Arrays**
+	- Non-Linear (Stored/accessed in non-linear order)
+		Eg: Trees, Graphs
+
+**Arrays cannot be created in any programming language. Created automatically
+
+Abstract data types (ADT's)
+- 
+User-defined data types that are defined along with their operations
+- Primitive data types support basic operations such as addition and subtraction. System provides implementations for these.For ADT's the operations have to be defined 
+- Describes certain operations that can be done on the data itself
+- Called as "Abstract" since it gives an implementation-independent view
+- Examples :: Data type and operations
+	- Stack (isFull(), isEmpty() etc)
+	- Queue (insert(), delete() etc)
+	- List (size(), get(i) etc)
+- The user or client of the ADT needs to know about the method interfaces (such as names of the methods, types of parameters, what methods  do and what are the values returned), not the actual implementation.
+
+
+Linked Lists  
+Stacks  
+Queues  
+Trees  
+Graphs  
+
+ALGORITHMS
+- 
+- An algorithm is the step-by-step unambiguous instructions to solve a given problem.
+- Main Criteria to judge the merits of algorithm
+	- Correctness (give solution in finite number of steps)
+	- Efficiency
+- Analysis of Algorithms 
+	- Amongst the various solutions possible, algorithm analysis helps determine the most efficient algorithm in terms of time and space consumed
+	- Goal is to compare algorithms in terms of various factors (such as running time, memory, developer effort etc)
+- Running Time Analysis 
+	- Process of determining how the running time increases as input size increases 
+
+<i>Note: Common types of input :: Size of array, Polynominal degree, Number of elements in a matrix, Vertices and indicies of the graph, Number of bits in input</i>
+
+- Comparison of algorithms
+	- Express running time of any algorithm as function of input size and compare them
+	- Other comparison methods (not to be used)
+		- Execution time : as these are specific to computer
+		- Number of statements executed : as this is specific to the programming language
+		
+![GROWTH_RATE](growth_rate.png)
+	
+- Asymptotic Notation
+
+
+Sorting algorithms
+- 
+Insertion sort
+Heap sort
+
+SEARCHING ALGORITHMS
+Binary search
+Intercorelation search
+
+SYMBOL TABLE (HASH TABLE)
+
+STRING ALGORITHMS
+
+DYNAMIC PROGRAMMING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # algorithms-and-data-structures
 
 Data structures
