@@ -56,7 +56,7 @@ ALGORITHMS
 	- "Asymptotic" means approaching a value or curve arbitrarily closely 
 	
 	- <ins><b>Big O Notation (upper bound function)</ins></b>
-		- If f(n) denotes the running time(time complexity) of an algorithm , then O(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= f(n) <= cg(n), for all n >= n0.
+		- If f(n) denotes the running time(time complexity) of an algorithm , then O(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= f(n) <= cg(n), for all n >= n0.  
 		<i> Example </i>
 		
 		f(n) = 3n + 2  
@@ -88,10 +88,9 @@ ALGORITHMS
 		- Big theta is actually combination of Big oh and omega, but the function should satisfy the condition n >= n0. 
 		- From the above examples for f(n) = 3n+2, n0=2 for Big oh where as n0=1 for Big omega. 
 		
-  		c1*n <= 3n + 2 <= c2*n, for all n > n0
- 
-		Solution 1 :: keep n0 as 1,but make c2 = 5, c1=3
-		solution 2 :: n0 = 2, c1=3 and c2=4
+  		c1*n <= 3n + 2 <= c2*n, for all n > n0    
+ 		Solution 1 :: keep n0 as 1,but make c2 = 5, c1=3  
+		solution 2 :: n0 = 2, c1=3 and c2=4  
 
 ![Big Oh Rate of Growth](big_oh.PNG)	
 ![Big Omega Rate of Growth](big_omega.PNG)	
