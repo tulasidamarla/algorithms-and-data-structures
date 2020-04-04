@@ -55,22 +55,23 @@ ALGORITHMS
 	- Syntax for representing upper and lower bounds 
 	- Upper and lower bounds need to be identified for best, worst and average cases
 	- "Asymptotic" means approaching a value or curve arbitrarily closely 
-	- Big O Notation (upper bound function)
-	- If f(n) denotes the running time(time complexity) of an algorithm , then O(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= f(n) <= cg(n), for all n >= n0.
 	
+	- <ins><b>Big O Notation (upper bound function)</ins></b>
+		- If f(n) denotes the running time(time complexity) of an algorithm , then O(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= f(n) <= cg(n), for all n >= n0.
 		<i> Example </i>
 		
 		f(n) = 3n + 2  
 		3n + 2 <= cn (This condition will be satisfied if c >= 4, we choose 4 because that is closest)  
 		3n + 2 <= 4n  
 		n >= 2  
-		
-		It means that the constant c is 4 and n0 is 2. i.e. The function 4n is always greater than 3n+2 when n >= 2
+
+		It means that the constant c is 4 and n0 is 2. i.e. The function 4n is always greater than 3n+2 when n >= 2. 
 
 		<i>Conclusion</i>
 
 		If f(n) = 3n +2 and g(n) = n, then f(n) = O(g(n)). It means that f(n) is always lessthan some constant multiplied by g(n), which is nothing but upper bound of f(n).
 
+![Rate of Growth](bigo_rog.png)
 
 Sorting algorithms
 - 
