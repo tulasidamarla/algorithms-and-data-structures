@@ -31,12 +31,12 @@ ALGORITHMS
 - <ins><b>Analysis of Algorithms</b></ins> 
 	- Amongst the various solutions possible, algorithm analysis helps determine the most efficient algorithm in terms of time and space consumed
 	- Goal is to compare algorithms in terms of various factors (such as running time, memory, developer effort etc)
-- <u><b>Running Time Analysis</b></u>
+- <ins><b>Running Time Analysis</b></ins>
 	- Process of determining how the running time increases as input size increases 
 
 <i>Note: Common types of input :: Size of array, Polynominal degree, Number of elements in a matrix, Vertices and indicies of the graph, Number of bits in input</i>
 
-- <u><b>Comparison of algorithms</b></u>
+- <ins><b>Comparison of algorithms</b></ins>
 	- Express running time of any algorithm as function of input size and compare them
 	- Other comparison methods (not to be used)
 		- Execution time : as these are specific to computer
