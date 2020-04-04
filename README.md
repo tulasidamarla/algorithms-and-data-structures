@@ -43,7 +43,6 @@ ALGORITHMS
 		- Number of statements executed : as this is specific to the programming language
 		
 ![GROWTH_RATE](growth_rate.png)
-
 - <ins>Analysis of an algorithm</ins>
 	- For which inputs algorithm takes least amount of time to run (Best case)
 	- For which inputs algorithm takes longest amount of time to run (worst case)
@@ -69,7 +68,7 @@ ALGORITHMS
 		<i>Conclusion</i> If f(n) = 3n +2 and g(n) = n, then f(n) = O(g(n)). It means that f(n) is always lessthan some constant multiplied by g(n), which is nothing but upper bound of f(n).
 	- <ins><b>Big Omega  Notation Ω(lower bound function)</ins></b>
 		- If f(n) denotes the time complexity of an algorithm, then Ω(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= cg(n) <= f(n), for all n >= n0.
-		- At larger values of n, the tighter lower bound of f(n) is g(n). For example, if f(n) = 100n<sup>2</sup> + 10n + 50, g(n) is Ω(n<sup>2</sup>).
+		- At larger values of n, the tighter lower bound of f(n) is g(n). For example, if f(n) = 100n<sup>2</sup> + 10n + 50, 	g(n) is Ω(n<sup>2</sup>).
 		
 		<i>Example</i>
 
@@ -90,7 +89,8 @@ ALGORITHMS
  		Solution 1 :: keep n0 as 1,but make c2 = 5, c1=3  
 		solution 2 :: n0 = 2, c1=3 and c2=4  
 
-<img src="big_oh.PNG" alt="Big Oh" align="middle">Big Oh</img>
+<img src="big_oh.PNG" alt="Big Oh" align="middle">
+<b>Big Oh</b>
 ![Big Omega Rate of Growth](big_omega.PNG)	
 ![Big Theta Rate of Growth](big_theta.PNG)	
 
