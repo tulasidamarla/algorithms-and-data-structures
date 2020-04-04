@@ -44,7 +44,6 @@ ALGORITHMS
 		
 ![GROWTH_RATE](growth_rate.png)
 
-
 - <ins>Analysis of an algorithm</ins>
 	- For which inputs algorithm takes least amount of time to run (Best case)
 	- For which inputs algorithm takes longest amount of time to run (worst case)
@@ -70,9 +69,6 @@ ALGORITHMS
 		<i>Conclusion</i>
 
 		If f(n) = 3n +2 and g(n) = n, then f(n) = O(g(n)). It means that f(n) is always lessthan some constant multiplied by g(n), which is nothing but upper bound of f(n).
-
-![Rate of Growth](big_oh.PNG)
-
 	- <ins><b>Big Omega  Notation Ω(lower bound function)</ins></b>
 		- If f(n) denotes the time complexity of an algorithm, then Ω(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= cg(n) <= f(n), for all n >= n0.
 		- At larger values of n, the tighter lower bound of f(n) is g(n). For example, if f(n) = 100n<sup>2</sup> + 10n + 50, g(n) is Ω(n<sup>2</sup>).
@@ -87,9 +83,6 @@ ALGORITHMS
 		
 		<i>Conclusion</i>
 		If f(n) = 3n +2 and g(n) = n, then f(n) = Ω(g(n)). It means that f(n) is always greater than some constant multiplied by g(n), which is nothing but lower bound of f(n).
-	
-![Rate of Growth](big_omega.PNG)	
-	
 	- <ins><b> Big Theta Notation (Order Function) </ins></b>
 		- If f(n) denotes the time complexity of an algorithm, then θ(g(n)) = f(n), there exists positive constants c1,c2,n0 such that 0 <= c1g(n) <= f(n) <= c2g(n), for all n >= n0.
 		- Big theta is actually combination of Big oh and omega, but the function should satisfy the condition n >= n0. 
@@ -100,8 +93,9 @@ ALGORITHMS
 		Solution 1 :: keep n0 as 1,but make c2 = 5, c1=3
 		solution 2 :: n0 = 2, c1=3 and c2=4
 
-	
-![Rate of Growth](big_theta.PNG)	
+![Big Oh Rate of Growth](big_oh.PNG)	
+![Big Omega Rate of Growth](big_omega.PNG)	
+![Big Theta Rate of Growth](big_theta.PNG)	
 
 Sorting algorithms
 - 
