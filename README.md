@@ -27,16 +27,16 @@ ALGORITHMS
 - An algorithm is the step-by-step unambiguous instructions to solve a given problem.
 - Main Criteria to judge the merits of algorithm
 	- Correctness (give solution in finite number of steps)
-	- Efficiency
-- <u>Analysis of Algorithms</u> 
+	- Efficiency (how much resources does it take to execute)
+- <u><b>Analysis of Algorithms</b></u> 
 	- Amongst the various solutions possible, algorithm analysis helps determine the most efficient algorithm in terms of time and space consumed
 	- Goal is to compare algorithms in terms of various factors (such as running time, memory, developer effort etc)
-- Running Time Analysis 
+- <u><b>Running Time Analysis</b></u>
 	- Process of determining how the running time increases as input size increases 
 
 <i>Note: Common types of input :: Size of array, Polynominal degree, Number of elements in a matrix, Vertices and indicies of the graph, Number of bits in input</i>
 
-- Comparison of algorithms
+- <u><b>Comparison of algorithms</b></u>
 	- Express running time of any algorithm as function of input size and compare them
 	- Other comparison methods (not to be used)
 		- Execution time : as these are specific to computer
@@ -44,6 +44,7 @@ ALGORITHMS
 		
 ![GROWTH_RATE](growth_rate.png)
 	
+
 - Asymptotic Notation
 
 
@@ -61,8 +62,6 @@ SYMBOL TABLE (HASH TABLE)
 STRING ALGORITHMS
 
 DYNAMIC PROGRAMMING
-
-
 
 
 
