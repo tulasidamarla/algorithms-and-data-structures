@@ -71,7 +71,7 @@ ALGORITHMS
 
 		If f(n) = 3n +2 and g(n) = n, then f(n) = O(g(n)). It means that f(n) is always lessthan some constant multiplied by g(n), which is nothing but upper bound of f(n).
 
-![Rate of Growth](bigo_rog.png)
+![Rate of Growth](bigo_rog.PNG)
 
 Sorting algorithms
 - 
