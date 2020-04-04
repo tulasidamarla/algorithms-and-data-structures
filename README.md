@@ -28,7 +28,7 @@ ALGORITHMS
 - Main Criteria to judge the merits of algorithm
 	- Correctness (give solution in finite number of steps)
 	- Efficiency
-- Analysis of Algorithms 
+- <u>Analysis of Algorithms</u> 
 	- Amongst the various solutions possible, algorithm analysis helps determine the most efficient algorithm in terms of time and space consumed
 	- Goal is to compare algorithms in terms of various factors (such as running time, memory, developer effort etc)
 - Running Time Analysis 
