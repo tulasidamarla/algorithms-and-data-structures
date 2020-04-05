@@ -33,7 +33,7 @@ ALGORITHMS
 	- Goal is to compare algorithms in terms of various factors (such as running time, memory, developer effort etc)
 - <ins><b>Running Time Analysis</b></ins>
 	- Process of determining how the running time increases as input size increases 
-<img src="big_oh.PNG" alt="Big Oh" align="middle" width="30%">
+
 <i>Note: Common types of input :: Size of array, Polynominal degree, Number of elements in a matrix, Vertices and indicies of the graph, Number of bits in input</i>
 
 - <ins><b>Comparison of algorithms</b></ins>
@@ -43,6 +43,7 @@ ALGORITHMS
 		- Number of statements executed : as this is specific to the programming language
 		
 <img src="growth_rate.png" alt="Growth Rate" align="middle" width="70%">
+
 - <ins>Analysis of an algorithm</ins>
 	- For which inputs algorithm takes least amount of time to run (Best case)
 	- For which inputs algorithm takes longest amount of time to run (worst case)
@@ -91,7 +92,7 @@ ALGORITHMS
 
 <img src="big_oh.PNG" alt="Big Oh" align="middle" width="30%"><img src="big_omega.PNG" alt="Big Omega" align="middle" width="30%">
 <img src="big_theta.PNG" alt="Big Theta" align="middle" width="30%">
-<h1 style="text-align:left;">Big Oh</h1><h1 style="text-align:center;">Big Omega</h1><h1 style="text-align:right;">Big Theta</h1>
+<p style="text-align:left;">Big Oh</p><p style="text-align:center;">Big Omega</p><p style="text-align:right;">Big Theta</p>
 
 <b>Big Oh</b><b>Big Omega</b><b>Big Theta</b>
 
