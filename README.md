@@ -92,7 +92,7 @@ ALGORITHMS
 
 <img src="big_oh.PNG" alt="Big Oh" align="middle" width="30%"><img src="big_omega.PNG" alt="Big Omega" align="middle" width="30%">
 <img src="big_theta.PNG" alt="Big Theta" align="middle" width="30%">
-<b>Big Oh</b>&nbsp;&nbsp;&nbsp;<b>Big Omega</b>&nbsp;&nbsp;<b>Big Theta</b>
+<br><b>Big Oh</b>&emsp;&emsp;&emsp;<b>Big Omega</b>&emsp;&emsp;&emsp;<b>Big Theta</b>
 
 
 
