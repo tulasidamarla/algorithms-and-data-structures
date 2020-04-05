@@ -89,7 +89,8 @@ ALGORITHMS
  		Solution 1 :: keep n0 as 1,but make c2 = 5, c1=3  
 		solution 2 :: n0 = 2, c1=3 and c2=4  
 
-<img src="big_oh.PNG" alt="Big Oh" align="middle">
+<img src="big_oh.PNG" alt="Big Oh" align="middle" width="30%"><img src="big_omega.PNG" alt="Big Omega" align="middle" width="30%">
+<img src="big_theta.PNG" alt="Big Theta" align="middle" width="30%">
 <b>Big Oh</b>
 ![Big Omega Rate of Growth](big_omega.PNG)	
 ![Big Theta Rate of Growth](big_theta.PNG)	
