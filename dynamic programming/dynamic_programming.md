@@ -21,15 +21,15 @@ Note: This property where a problem has a recursive definition is called the opt
 
 Let's see an example for fib(5). Here is the hierarchy of calls.
              
-                         fib(5)
-                     /             \
-               fib(4)                fib(3)
-             /      \                /     \
-         fib(3)      fib(2)         fib(2)    fib(1)
-        /     \        /    \       /    \
-  fib(2)   fib(1)  fib(1) fib(0) fib(1) fib(0)
-  /    \
-fib(1) fib(0)
+				 fib(5)
+			     /             \
+		       fib(4)                fib(3)
+		     /      \                /     \
+		 fib(3)      fib(2)         fib(2)    fib(1)
+		/     \        /    \       /    \
+	  fib(2)   fib(1)  fib(1) fib(0) fib(1) fib(0)
+	  /    \
+	fib(1) fib(0)
 
 Note: The important thing to note above is that some fib() functions to calculate the same number multiple times. For ex, fib(3) substructure is calculated twice, similarly, fib(2) substructure was calculated 3 times. This is called as overlapping subproblems property.
 
