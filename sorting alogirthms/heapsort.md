@@ -54,13 +54,33 @@ Heaps are of two types
 - Most common implementation of heap is binary tree. Heap needs a complete binary tree. 
   - Disadvantge of using Binary tree is, it consumes more space because it needs pointers
   
+  <table>
+  <tr>
+    <th>List Type</th>
+    <th>Insertion</th>
+    <th>Search</th>
+    <th>Find Minimum</th>
+    <th>Delete Minimum</th>
+  </tr>
+  <tr>
+    <td>Min Heap</td>
+    <td>O(1)</td>
+    <td>O(n)</td>
+    <td>O(1)</td>
+    <td>O(logn)</td>
+  </tr>
+  
+</table>
+</body>
+</html>
+  
 Binary Tree
 - There are 3 types of binary trees.<br>
   - Strict binary tree --> Any node in the tree will have either 0 or 2 sub nodes. <br>
   - Complete binary tree --> There will be no null nodes from root to last leaf node. <br>
   - Full binary tree --> Its a complete binary tree with all leaf nodes at same level. <br>
 
-To represent tree into a list, tree elements have to be given indexes. Generally, tree index start with root as index 0(lets say root value is 10). This is called level 0. For binary tree root node contains two sub nodes with indexing from left to right. i.e. left sub node of root has index 1(lets say value is 5) and right element has index 2(lets say value 11). This is level 1. Again sub node with index 1 has two sub nodes. Indexes from left to right is 3 and 4. Lets say values are 15 and 6. Final array is 10	5	11	15	6.
+To represent tree from an array, tree elements have to be given indexes. Generally, tree index start with root as index 0(lets say root value is 10). This is called level 0. For binary tree root node contains two sub nodes with indexing from left to right. i.e. left sub node of root has index 1(lets say value is 5) and right element has index 2(lets say value 11). This is level 1. Again sub node with index 1 has two sub nodes. Indexes from left to right is 3 and 4. Lets say values are 15 and 6. Final array is 10	5	11	15	6.
 
 To find the left sub node of a node with index 'i' is 2i.In java 2i+1; <br>
 To find the right sub node of a node with index 'i' is 2i+1. In java 2i+2; <br>
