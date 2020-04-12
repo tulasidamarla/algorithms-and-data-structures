@@ -66,7 +66,7 @@ Time complexity of various operations of min heap
   </tr>
   <tr>
     <td>Min Heap</td>
-    <td>O(1)</td>
+    <td>O(logn)</td>
     <td>O(n)</td>
     <td>O(1)</td>
     <td>O(logn)</td>
