@@ -2,9 +2,7 @@
 Lets see the time complexity for various operations in commonly used data structures.
 <html>
 <head>
-<style>
 
-</style>
 </head>
 <body>
 
