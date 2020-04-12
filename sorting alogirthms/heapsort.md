@@ -54,6 +54,7 @@ Heaps are of two types
 - Most common implementation of heap is binary tree. 
   - Heap needs a complete binary tree. 
   - Disadvantge of using Binary tree is, it consumes more space because it needs pointers
+
 Time complexity of various operations of min heap
 
   <table>
