@@ -98,15 +98,15 @@ Binary Tree properties
 Representing Heap using Array
 -
 
+
 		10
 	      /    \
 	     5     11
 	   /  \   /  \
 	  15   6 7    9
 	  
-- To imagine tree from an array, tree elements have to be given indexes.
-- If a tree contains
-- Tree index start with root as index 0(lets say root value is 10). This is called level 0. 
+- To represent the tree elements in an array let's to level order traversal and give indexes.
+- For the above example values at index 0 is 1, index 1 is 5, index 2 is 11, index 3 is 15, index 4 is 6, index 5 is 7 and index 6 is 9.  - Tree index start with root as index 0(lets say root value is 10). This is called level 0. 
 - If root node contains two sub nodes with indexing from left to right. i.e. left sub node of root has index 1(lets say value is 5) and right element has index 2(lets say value 11). This is level 1. Again sub node with index 1 has two sub nodes. Indexes from left to right is 3 and 4. Lets say values are 15 and 6. Final array is 10	5	11	15	6.
 
 To find the left sub node of a node with index 'i' is 2i.In java 2i+1; <br>
