@@ -40,24 +40,25 @@ Lets see the time complexity for various operations in commonly used data struct
 </body>
 </html>
 
-Some requirements need insert, finding minimum and deleting minimum to be optimal. Search may not be the main requirement. Heap is one such data structure. There are two types of heaps available. They are called Min heap and Max heap.
-
-The time complexity of heap for insert, find min and delete min are O(logn), 1, O(logn).
-
 Heap
 ----
-Heap can be implemented as a binary, ternary, .... or a n-ary tree.
+Some requirements need insert, finding minimum and deleting minimum to be optimal. Search may not be the main requirement. 
 
-Most common implementationis a binary tree. Heap needs a complete binary tree. A complete binary tree is a tree with no gaps in between. That is from the first leaf node to last leaf node there will not be any gaps. 
-
-There are 3 types of binary trees.<br>
-Strict binary tree --> Any node in the tree will have either 0 or 2 sub nodes. <br>
-Complete binary tree --> There will be no null nodes from root to last leaf node. <br>
-Full binary tree --> Its a complete binary tree with all leaf nodes at same level. <br>
-
-Max heap is a complete binary tree in which max element is at the root. Similary, Min heap is a complete binary tree in which min element is at the root.
-
-To represent heap , no need of a tree like data structure, because tree data structure needs pointers and consume more space. Heap can be represented using array.
+Heap is a data structure which gives optimal performance for insert, find min and delete min. 
+Heaps are of two types
+- Min heap and Max heap.
+  - Min heap is a complete binary tree in which min element is at the root.
+  - Max heap is a complete binary tree in which max element is at the root.  
+- The time complexity of heap for insert, find min and delete min are O(logn), 1, O(logn).
+- Heap can be implemented as a binary, ternary, .... or a n-ary tree.
+- Most common implementation of heap is binary tree. Heap needs a complete binary tree. 
+  - Disadvantge of using Binary tree is, it consumes more space because it needs pointers
+  
+Binary Tree
+- There are 3 types of binary trees.<br>
+  - Strict binary tree --> Any node in the tree will have either 0 or 2 sub nodes. <br>
+  - Complete binary tree --> There will be no null nodes from root to last leaf node. <br>
+  - Full binary tree --> Its a complete binary tree with all leaf nodes at same level. <br>
 
 To represent tree into a list, tree elements have to be given indexes. Generally, tree index start with root as index 0(lets say root value is 10). This is called level 0. For binary tree root node contains two sub nodes with indexing from left to right. i.e. left sub node of root has index 1(lets say value is 5) and right element has index 2(lets say value 11). This is level 1. Again sub node with index 1 has two sub nodes. Indexes from left to right is 3 and 4. Lets say values are 15 and 6. Final array is 10	5	11	15	6.
 
