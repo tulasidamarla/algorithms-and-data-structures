@@ -119,6 +119,13 @@ If n is the no of nodes in a tree, leaf nodes start from n/2+1 to n. We need to 
 <b>problem 1</b>
 
 25,12,16,13,10,8,14 
+
+		25
+	      /    \
+	     12     16
+	   /  \   /  \
+	  13  10 8   14
+
 - size is 7. verify from 0 to 3 indexes.
 - left of 25(12 using formula 2i+1 index is 1 ) satisfies max heap condition, right of 25 (using formual 2i+2 is 2) satisfies max heap
 - left of 12 (value is 13 at index 2*1+1) does not satisfy max heap condition
@@ -126,6 +133,14 @@ If n is the no of nodes in a tree, leaf nodes start from n/2+1 to n. We need to 
 <b>Answer:</b> does not represent max heap 
 
 25,14,16,13,10,8,14
+
+		25
+	      /    \
+	     14     16
+	   /  \   /  \
+	  13  10 8   14
+
+
 - size is 7. verify from 0 to 3 indexes.
 - left of 25(14 using formula 2i+1 index is 1 ) satisfies max heap condition, right of 25 (using formual 2i+2 is 2) satisfies max heap
 - left of 14 (value is 13 at index 2*1+1) satifies max heap condition, right of 14(value is 10 at index 2*1+2) satisfies max heap
