@@ -187,32 +187,57 @@ If n is the no of nodes in a tree, leaf nodes start from n/2+1 to n. We need to 
 
 Max heapify
 -----------
-Given a node whose left sub tree and right subtree already satisfy max heap, then to max heapify of the current node using recursive method,here is the code. 
-	
-	public static void maxHeapify(int[] a, int i, int n) {
 
-		int leftindex = 2 * i + 1;
-		int rightindex = 2 * i + 2;
+Given a node whose left sub tree and right subtree already satisfy max heap, then to max heapify of the current node using recursive method use the below code.
+	
+	
+	public static void maxHeapify(int[] a, int current, int n) {
+
+		int leftindex = 2 * current + 1;
+		int rightindex = 2 * current + 2;
 		int largeindex;
 
-		if (leftindex < n && a[leftindex] > a[i]) {
+		if (leftindex < n && a[leftindex] > a[current]) {
 			largeindex = leftindex;
 		} else {
-			largeindex = i;
+			largeindex = current;
 		}
 
 		if (rightindex < n && a[rightindex] > a[largeindex]) {
 			largeindex = rightindex;
 		}
 
-		if (largeindex != i) {
-			exchange(a, i, largeindex);
+		if (largeindex != current) {
+			exchange(a, current, largeindex);
 			maxHeapify(a, largeindex,n);
 		}
 
 	}
 
-Note: It is very important to note the left subtree and right subtree are already satisfying the max heapify.
+	private static void exchange(int[] array, int i, int j) {
+		int temp = array[i];
+		array[i] = array[j];
+		array[j] = temp;
+	}
+
+
+<i><Note>:</i> max heapifying logic always gets the max element to the current node from the sub tree. It means this travers from current node to deepest node.
+	
+Let's consider the strategy for max heapifying at node 12.
+
+		25
+	      /    \
+	     12     16
+	   /  \   /  \
+	  13  10 8   14
+
+
+- apply maxheapify at 12 (index 1). 12 doesn't satisfy max heap condition but 13 and 10 are satisfying max heap.
+  - compare 12 with left subnode 13 and store larger value index(13's index 3) in a variable say largeindex(3).
+  - compare 12's right subnode 10(index 4) with value at largeindex(3). As 13 is still larger no need to do change anything.
+  - exchange 12 with largeindex value. i.e. 12 and 13 are exchanged
+  
+<b>Note:</b> As per the code after exchanging it tries to maxHeapify from largeindex to sub nodes. That is from index 3, it tries to maxheapfiy the subtree. Because, that is a leaf node, it stops.
 
 Time complexity:
 ----------------
@@ -226,7 +251,7 @@ For recursive calling of methods, the worst space complexity is upto logn.
 
 Build Max Heap
 --------------
-We know all leaf nodes satisfy by default satisfy either max heap or min heap conditions. So, to build a max heap using max heapify algorithm, the max heapify algorithm has to run from last non leaf node to the root of the tree. 
+We know all leaf nodes satisfy by default satisfy either max heap or min heap conditions. So, to build a max heap using max heapify algorithm, the max heapify algorithm has to run from last non leaf node to the root of the tree i.e from n/2 to 0. 
 
 
 	public static void buildMaxHeap(int[] arr){
