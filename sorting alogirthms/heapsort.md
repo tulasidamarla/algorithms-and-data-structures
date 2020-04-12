@@ -117,7 +117,6 @@ Find if below arrays represents max heap
 If n is the no of nodes in a tree, leaf nodes start from n/2+1 to n. We need to verify the array from 0 to n/2, because all leaf nodes satisfy max heap condition.
 
 <b>problem 1</b>
-
 25,12,16,13,10,8,14 
 
 		25
@@ -132,6 +131,7 @@ If n is the no of nodes in a tree, leaf nodes start from n/2+1 to n. We need to 
 
 <b>Answer:</b> does not represent max heap 
 
+<b>problem 2</b>
 25,14,16,13,10,8,14
 
 		25
