@@ -17,7 +17,7 @@ Lets see the time complexity for various operations in commonly used data struct
     <th>Delete Minimum</th>
   </tr>
   <tr>
-    <td>Unsorted List</td>
+    <td>Unsorted Array</td>
     <td>O(1)</td>
     <td>O(n)</td>
     <td>O(n)</td>
@@ -52,19 +52,19 @@ Heap can be implemented as a binary, ternary, .... or a n-ary tree.
 
 Most common implementationis a binary tree. Heap needs a complete binary tree. A complete binary tree is a tree with no gaps in between. That is from the first leaf node to last leaf node there will not be any gaps. 
 
-There are 3 types of binary trees.
+There are 3 types of binary trees.<br>
 Strict binary tree --> Any node in the tree will have either 0 or 2 sub nodes. <br>
 Complete binary tree --> There will be no null nodes from root to last leaf node. <br>
 Full binary tree --> Its a complete binary tree with all leaf nodes at same level. <br>
 
 Max heap is a complete binary tree in which max element is at the root. Similary, Min heap is a complete binary tree in which min element is at the root.
 
-To represent heap , no need of a tree like data structure, because tree data structure needs pointers and consume more space. Heap can be represented using array/list.
+To represent heap , no need of a tree like data structure, because tree data structure needs pointers and consume more space. Heap can be represented using array.
 
 To represent tree into a list, tree elements have to be given indexes. Generally, tree index start with root as index 0(lets say root value is 10). This is called level 0. For binary tree root node contains two sub nodes with indexing from left to right. i.e. left sub node of root has index 1(lets say value is 5) and right element has index 2(lets say value 11). This is level 1. Again sub node with index 1 has two sub nodes. Indexes from left to right is 3 and 4. Lets say values are 15 and 6. Final array is 10	5	11	15	6.
 
-To find the left sub node of a node with index 'i' is 2i.In java 2i+1; 
-To find the right sub node of a node with index 'i' is 2i+1. In java 2i+2; 
+To find the left sub node of a node with index 'i' is 2i.In java 2i+1; <br>
+To find the right sub node of a node with index 'i' is 2i+1. In java 2i+2; <br>
 To find the parent of a node with index 'i' is i/2. 
 
 Note: If an array is in desc order, it is by default max heap. If an array is in asc order, by default it is min heap.
@@ -136,12 +136,16 @@ We know all leaf nodes satisfy by default satisfy either max heap or min heap co
 
 Time complexity
 ---------------
-To understand time complexity , few properties of a tree are needed.
+To understand time complexity , few properties of a tree are needed.<br>
 No of nodes present in a complete binary tree at height h , is seal of |n/2^(h+1)|+1. ( h is from 0 to logn)
 
-Total no of elements in a tree with height 4 is 15. so, at level 0, no of elements are 15/2. Seal can be applied or modulo . If modulo is used then add 1. i.e. |15/2|+1 = 8. so, no of elemets at level 0 are 8, level 1 are 4, level 2 is 2 and level 1 is 1.
+Total no of elements in a tree with height 4 is 15. <br>
+so, at level 0, no of elements are |15/2|+1 = 8. <br>
+no of elements at level 1 are 4.<br>
+no of elements at level 2 are 2.<br>
+no of elements at level 3 are 1.<br>
 
-Total work done, for running max heapify on all nodes at a height h is  (|n/2^(h+1)|+1)*O(h).
+Total work done, for running max heapify on all nodes at a height h is  (|n/2^(h+1)|+1)*O(h).<br>
 Total work done, for running max heapify on complete tree is  ∑(|n/2^(h+1)|+1)O(h) where h = 1 to logn.
 
 	T(n) = n/2 ∑ h/2^h ( where h = 0 to logn)
@@ -171,7 +175,7 @@ Maximum element in a max heap is the first element. After deleting the first ele
 
 Note:  After deletion remaining elements are copied to new array because in java you can't resize an existing array.
 
-Time complexity for deletion is same as maxHeapify. i.e. O(logn)
+Time complexity for deletion is same as maxHeapify. i.e. O(logn)<br>
 Space complexity is also same as maxHeapify i.e. O(logn)
 
 Increasing a value
