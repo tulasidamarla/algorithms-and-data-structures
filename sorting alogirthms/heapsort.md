@@ -148,6 +148,19 @@ If n is the no of nodes in a tree, leaf nodes start from n/2+1 to n. We need to 
 
 <b>Answer:</b> represents max heap 
 
+<b>Program to find if an array represents map heap</b>
+
+	static boolean isMaxHeap(int[] array) {
+		boolean flag = true;
+		for(int i = 0 ; i < array.length/2; i++) {
+			if ( (array[i] < array[2*i+1]) || (array[i] < array[2*i+2])) {
+				flag = false;
+				break;
+			}
+		}
+		return flag;
+	}
+
 
 Max heapify
 -----------
