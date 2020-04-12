@@ -82,8 +82,32 @@ Time complexity of various operations of min heap
 </body>
 </html>
   
+Binary Tree properties
+-
+- Height of a tree is the no of edges between root node to longest leaf node.<br>
+- Hieght of a node is the no of edges between the node to its deepest leaf.<br>
+- Depth of a node is the no of edges between the node and the root node.<br>
+- For a tree, Height and deapth are same.
+- If height of the tree is h, then total no of nodes (2^0 + 2^1 + ...2^h).<br>
+- Max no of nodes in a full binary tree is 2^(h+1)-1.<br>
+- If 'n' is the no of nodes of a binary tree, then height of the tree is logn.<br>
+- If n is the no of elements then in a complete binary tree leafs exists from  (n/2)+1 to n.<br>
+- All non leaf nodes are present from 0 to n/2. 
+- All leaf nodes are already either max or min heap.
 
-To represent tree from an array, tree elements have to be given indexes. Generally, tree index start with root as index 0(lets say root value is 10). This is called level 0. For binary tree root node contains two sub nodes with indexing from left to right. i.e. left sub node of root has index 1(lets say value is 5) and right element has index 2(lets say value 11). This is level 1. Again sub node with index 1 has two sub nodes. Indexes from left to right is 3 and 4. Lets say values are 15 and 6. Final array is 10	5	11	15	6.
+Representing Heap using Array
+-
+
+		10
+	      /    \
+	     5     11
+	   /  \   /  \
+	  15   6 7    9
+	  
+- To imagine tree from an array, tree elements have to be given indexes.
+- If a tree contains
+- Tree index start with root as index 0(lets say root value is 10). This is called level 0. 
+- If root node contains two sub nodes with indexing from left to right. i.e. left sub node of root has index 1(lets say value is 5) and right element has index 2(lets say value 11). This is level 1. Again sub node with index 1 has two sub nodes. Indexes from left to right is 3 and 4. Lets say values are 15 and 6. Final array is 10	5	11	15	6.
 
 To find the left sub node of a node with index 'i' is 2i.In java 2i+1; <br>
 To find the right sub node of a node with index 'i' is 2i+1. In java 2i+2; <br>
@@ -91,20 +115,6 @@ To find the parent of a node with index 'i' is i/2.
 
 Note: If an array is in desc order, it is by default max heap. If an array is in asc order, by default it is min heap.
 
-Height of a tree is the no of edges between root node to longest leaf node.<br>
-Hieght of a node is the no of edges between the node to its deepest leaf.<br>
-Deapth of a node is the no of edges between the node and the root node.<br>
-
-For a tree, Height and deapth are same.
-
-For a binary tree, if height of the tree is h, then total no of nodes (1+ 2^0 + 2^1 + ...2^h).<br>
-so max no of nodes in a full binary tree is 2^(h+1)-1.<br>
-If 'n' is the no of nodes of a binary tree, then height of the tree is logn.<br>
-
-If n is the no of elements then in a complete binary tree leafs exists from  (n/2)+1 to n.<br>
-All non leaf nodes are present from 0 to n/2. 
-
-All leaf nodes are already either max or min heap.
 
 Max heapify
 -----------
