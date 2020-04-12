@@ -54,12 +54,6 @@ Heaps are of two types
 - Most common implementation of heap is binary tree. 
   - Heap needs a complete binary tree. 
   - Disadvantge of using Binary tree is, it consumes more space because it needs pointers
-
-Binary Tree Types
-- Strict binary tree --> Any node in the tree will have either 0 or 2 sub nodes. <br>
-- Complete binary tree --> There will be no null nodes from root to last leaf node. <br>
-- Full binary tree --> Its a complete binary tree with all leaf nodes at same level. <br>
-
 Time complexity of various operations of min heap
 
   <table>
@@ -81,7 +75,12 @@ Time complexity of various operations of min heap
 </table>
 </body>
 </html>
-  
+
+Binary Tree Types
+- Strict binary tree --> Any node in the tree will have either 0 or 2 sub nodes. <br>
+- Complete binary tree --> There will be no null nodes from root to last leaf node. <br>
+- Full binary tree --> Its a complete binary tree with all leaf nodes at same level. <br>
+
 Binary Tree properties
 -
 - Height of a tree is the no of edges between root node to longest leaf node.<br>
@@ -95,6 +94,30 @@ Binary Tree properties
 - All non leaf nodes are present from 0 to n/2. 
 - All leaf nodes are already either max or min heap.
 
+<b>Findout if below are complete binary trees</b>
+
+<b>problem 1</b>
+
+		10		
+	      /    \
+	     5     11		
+	   /  \     
+	  15   6     		
+
+Index of elements starting from root by level order traversal -> 0,1,2,3,4
+
+<b>Answer</b>: Complete binary tree
+
+		10
+	      /    \
+	     5     11
+	   /  \   /  \
+	      6 7    9
+
+Index of elements starting from root by level order traversal -> 0,1,2,null,4,5,6
+
+<b>Answer</b>: Not a complete binary tree
+  
 Representing Heap using Array
 -
 
