@@ -241,9 +241,9 @@ Let's consider the strategy for max heapifying at node 12.
 
 Time complexity:
 ----------------
-For each level of heap, it requires to comparisions.(i.e with left and right). so to bring down an element from top node to deepest node, it requires 2*logn, because logn is the height of the tree. so, time complexity is approximately logn.
+For max heapifying at any given level of heap, it requires two comparisions.(i.e with left and right). so to bring down an element from top node to deepest node, time complexity is 2*h i.e. 2logn, because logn is the height of the tree given n elements. 
 
-Max heapify varies depends on height of tree. For ex, if max heapify is applied at leaf nodes, then it is O(1). If max heapify is applied at level 1, then it is O(2). so, if max heapify is applied at the root, then it is O(h). we know given n elements height of the tree is logn. so h=logn. i.e. O(logn).
+<b> Time complexity is approximately logn. </b>
 
 Space complexity
 ----------------
