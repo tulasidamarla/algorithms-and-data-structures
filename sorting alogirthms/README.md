@@ -70,33 +70,31 @@ Merging is a process of combining two sorted arrays into one sorted array.
 
 	public void merge(int[] left, int[] right, int[] result){
 
-		int indexLeft=0;
-		int indexRight=0;
-		int j=0;
-		
-		while(indexLeft < left.length && indexRight < right.length){ // n times
-			if(left[indexLeft] < right[indexRight]){
-				result[j] = right[indexRight];
-				indexRight++;
-			}else{
-				result[j] = left[indexLeft];
-				indexLeft++;
+		int indexLeft = 0;
+		int indexRight = 0;
+
+		for (int i = 0; i < result.length; i++) {
+			if (indexLeft < left.length && indexRight < right.length) {
+				if (left[indexLeft] > right[indexRight]) {
+					result[i] = right[indexRight];
+					indexRight++;
+				} else {
+					result[i] = left[indexLeft];
+					indexLeft++;
+				}
+			} else {
+				//copy what is remaining
+				if (indexLeft < left.length) {
+					result[i] = left[indexLeft];
+					indexLeft++;
+				}
+
+				if (indexRight < right.length) {
+					result[i] = right[indexRight];
+					indexRight++;
+				}
 			}
-			j++;
 		}
-		//copy what is remaining
-		while(indexLeft < left.length){
-			result[j] = left[indexleft];
-			indexLeft++;
-			j++;
-		}
-		
-		while(indexRight < right.length){
-			result[j] = right[indexRight];
-			indexRight++;
-			j++;
-		}
-		
 	}
 	
 Time Complexity
