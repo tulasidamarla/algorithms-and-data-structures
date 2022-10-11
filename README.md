@@ -117,5 +117,5 @@ int[] array= {5,7,3,2,1,8,9};<br>
 - For ex searching for element 9, requires scan of the entire array, which is the worst case. It is represented as O(n).  
 - For average case it is θ(n/2), which is θ(n) 
 
-<a href="algorithms/2.asymptotic_notations.md">Next: asymptotic notations</a>
+<a href="algorithms/1.asymptotic_notations.md">Next: asymptotic notations</a>
 
