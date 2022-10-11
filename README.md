@@ -8,7 +8,7 @@ DATA STRUCTURES
     - Non-Linear (Stored/accessed in non-linear order)
       Eg: Trees, Graphs
 
-**Arrays cannot be created in any programming language. Created automatically
+**Arrays cannot be created manually. They are created automatically by the programming language.
 
 Abstract data types (ADT's)
 - 
