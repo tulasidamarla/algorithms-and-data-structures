@@ -75,7 +75,7 @@ ALGORITHMS
     - Constant c is 4 and n0 is 2, which implies function 4n is always greater than 3n+2 when n >= 2.
     - <i>Conclusion</i> f(n) is always lessthan some constant multiplied by g(n), which describes upper bound of f(n).
    
-   <ins><b>Big Omega  Notation Ω(lower bound function)</ins></b>
+   - <ins><b>Big Omega  Notation Ω(lower bound function)</ins></b>
         - If f(n) denotes the time complexity of an algorithm, then Ω(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= cg(n) <= f(n), for all n >= n0.
         - At larger values of n, the tighter lower bound of f(n) is g(n). For example, if f(n) = 100n<sup>2</sup> + 10n + 50, 	g(n) is Ω(n<sup>2</sup>).
 
@@ -85,14 +85,14 @@ ALGORITHMS
       3n + 2 >= cn (This condition will be satisfied if c = 3)  
       3n + 2 >= 3n (This condition will be satisfied for all n values >= 1)
 
-    - If c=3 and n0 = 1, all the conditions are satisfied for Big omega. i.e. f(n) = Ω(g(n))
+       - If c=3 and n0 = 1, all the conditions are satisfied for Big omega. i.e. f(n) = Ω(g(n))
 
     - <i>Conclusion</i> f(n) is always greater than some constant multiplied by g(n), which describes lower bound of f(n).
     
-    - <ins><b> Big Theta Notation (Order Function) </ins></b>
-        - If f(n) denotes the time complexity of an algorithm, then θ(g(n)) = f(n), there exists positive constants c1,c2,n0 such that 0 <= c1g(n) <= f(n) <= c2g(n), for all n >= n0.
-        - Big theta is combination of Big oh and omega, but the function should satisfy the condition n >= n0.
-        - From the above examples for f(n) = 3n+2, n0=2 for Big oh where as n0=1 for Big omega.
+  - <ins><b> Big Theta Notation (Order Function) </ins></b>
+    - If f(n) denotes the time complexity of an algorithm, then θ(g(n)) = f(n), there exists positive constants c1,c2,n0 such that 0 <= c1g(n) <= f(n) <= c2g(n), for all n >= n0.
+    - Big theta is combination of Big oh and omega, but the function should satisfy the condition n >= n0.
+    - From the above examples for f(n) = 3n+2, n0=2 for Big oh where as n0=1 for Big omega.
 
       c1*n <= 3n + 2 <= c2*n, for all n > n0    
       Solution 1 :: keep n0 as 1,but make c2 = 5, c1=3  
