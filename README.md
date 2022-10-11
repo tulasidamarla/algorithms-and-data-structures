@@ -13,9 +13,10 @@ DATA STRUCTURES
 Abstract data types (ADT's)
 - 
 User-defined data types that are defined along with their operations
-- Primitive data types support basic operations such as addition and subtraction. System provides implementations for these.For ADT's the operations have to be defined
-- Describes certain operations that can be done on the data itself
-- Called as "Abstract" since it gives an implementation-independent view
+- Primitive data types support basic operations such as addition and subtraction. System provides implementations for these.
+- For ADT the operations have to be defined explicitly.
+- ADT describes certain operations that can be done on the data itself
+- It is called "Abstract" because it gives an implementation-independent view
 - Examples :: Data type and operations
     - Stack (isFull(), isEmpty() etc)
     - Queue (insert(), delete() etc)
