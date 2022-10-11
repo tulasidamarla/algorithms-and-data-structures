@@ -27,7 +27,7 @@ User-defined data types that are defined along with their operations
     - List 
       - size() 
       - get(i)
-- The user or client of the ADT needs to know about the method interfaces (such as names of the methods, types of parameters, what methods  do and what are the values returned), not the actual implementation.
+- The user or client of the ADT needs to know about the method interfaces such as names of the methods, types of parameters and what are the values returned, not the actual implementation.
 
 ALGORITHMS
 - 
