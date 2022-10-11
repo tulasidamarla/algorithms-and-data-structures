@@ -51,7 +51,7 @@ ALGORITHMS
 
 <img src="algorithms/growth_rate.png" alt="Growth Rate" align="middle" width="70%">
 
-- <ins><b>Analysis of an algorithm<b></ins>
+- <ins><b>Analysis of an algorithm</b></ins>
     - For which inputs algorithm takes least amount of time to run (Best case)
     - For which inputs algorithm takes longest amount of time to run (worst case)
     - For random inputs random running time of algorithm (Average case)
