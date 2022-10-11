@@ -66,15 +66,16 @@ ALGORITHMS
         - If f(n) denotes the running time(time complexity) of an algorithm , then O(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= f(n) <= cg(n), for all n >= n0.
 
     - <i> Example </i>  
+      
       ```f(n) = 3n + 2  
       3n + 2 <= cn (This condition will be satisfied if c >= 4, we choose 4 because that is closest)  
       3n + 2 <= 4n  
       n >= 2```  
 
-      It means that the constant c is 4 and n0 is 2. i.e. The function 4n is always greater than 3n+2 when n >= 2.
-
-      <i>Conclusion</i> If f(n) = 3n +2 and g(n) = n, then f(n) = O(g(n)). It means that f(n) is always lessthan some constant multiplied by g(n), which is nothing but upper bound of f(n).
-    - <ins><b>Big Omega  Notation Ω(lower bound function)</ins></b>
+    - Constant c is 4 and n0 is 2, which implies function 4n is always greater than 3n+2 when n >= 2.
+    - <i>Conclusion</i> f(n) is always lessthan some constant multiplied by g(n), that describes upper bound of f(n).
+   
+   <ins><b>Big Omega  Notation Ω(lower bound function)</ins></b>
         - If f(n) denotes the time complexity of an algorithm, then Ω(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= cg(n) <= f(n), for all n >= n0.
         - At larger values of n, the tighter lower bound of f(n) is g(n). For example, if f(n) = 100n<sup>2</sup> + 10n + 50, 	g(n) is Ω(n<sup>2</sup>).
 
