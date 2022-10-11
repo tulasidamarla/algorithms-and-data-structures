@@ -67,13 +67,13 @@ ALGORITHMS
 
     - <i> Example </i>  
       
-      ```f(n) = 3n + 2  
+      f(n) = 3n + 2  
       3n + 2 <= cn (This condition will be satisfied if c >= 4, we choose 4 because that is closest)  
       3n + 2 <= 4n  
-      n >= 2```  
+      n >= 2  
 
     - Constant c is 4 and n0 is 2, which implies function 4n is always greater than 3n+2 when n >= 2.
-    - <i>Conclusion</i> f(n) is always lessthan some constant multiplied by g(n), that describes upper bound of f(n).
+    - <i>Conclusion</i> f(n) is always lessthan some constant multiplied by g(n), which describes upper bound of f(n).
    
    <ins><b>Big Omega  Notation Ω(lower bound function)</ins></b>
         - If f(n) denotes the time complexity of an algorithm, then Ω(g(n)) = f(n), there exists positive constants c and n0 such that 0 <= cg(n) <= f(n), for all n >= n0.
@@ -85,10 +85,10 @@ ALGORITHMS
       3n + 2 >= cn (This condition will be satisfied if c = 3)  
       3n + 2 >= 3n (This condition will be satisfied for all n values >= 1)
 
-      If c=3 and n0 = 1, all the conditions are satisfied for Big omega. i.e. f(n) = Ω(g(n))
+    - If c=3 and n0 = 1, all the conditions are satisfied for Big omega. i.e. f(n) = Ω(g(n))
 
-      <i>Conclusion</i>
-      If f(n) = 3n +2 and g(n) = n, then f(n) = Ω(g(n)). It means that f(n) is always greater than some constant multiplied by g(n), which is nothing but lower bound of f(n).
+    - <i>Conclusion</i> f(n) is always greater than some constant multiplied by g(n), which describes lower bound of f(n).
+    
     - <ins><b> Big Theta Notation (Order Function) </ins></b>
         - If f(n) denotes the time complexity of an algorithm, then θ(g(n)) = f(n), there exists positive constants c1,c2,n0 such that 0 <= c1g(n) <= f(n) <= c2g(n), for all n >= n0.
         - Big theta is combination of Big oh and omega, but the function should satisfy the condition n >= n0.
