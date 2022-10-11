@@ -90,7 +90,7 @@ ALGORITHMS
       If f(n) = 3n +2 and g(n) = n, then f(n) = Ω(g(n)). It means that f(n) is always greater than some constant multiplied by g(n), which is nothing but lower bound of f(n).
     - <ins><b> Big Theta Notation (Order Function) </ins></b>
         - If f(n) denotes the time complexity of an algorithm, then θ(g(n)) = f(n), there exists positive constants c1,c2,n0 such that 0 <= c1g(n) <= f(n) <= c2g(n), for all n >= n0.
-        - Big theta is actually combination of Big oh and omega, but the function should satisfy the condition n >= n0.
+        - Big theta is combination of Big oh and omega, but the function should satisfy the condition n >= n0.
         - From the above examples for f(n) = 3n+2, n0=2 for Big oh where as n0=1 for Big omega.
 
       c1*n <= 3n + 2 <= c2*n, for all n > n0    
@@ -104,17 +104,17 @@ ALGORITHMS
 <span style="display:inline-block;margin-right: 150px;" width="200px">Big Omega</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="display:inline-block;" width="200px">Big Theta</span>
 
 <b><i>Note</b></i>  
-Big oh is used to find the worst case. In any scenario performance can't be worst than this for any value of n.  
-Big omega is used to find the best case. In any scenario performance can't be better than this for any value of n.  
-Big theta gives average case.  
-In practice Big omega is not of interest. Big oh is used to find the worst case scenarios.
+- Big oh is used to find the worst case. In any scenario performance can't be worst than this for any value of n.  
+- Big omega is used to find the best case. In any scenario performance can't be better than this for any value of n.  
+- Big theta gives average case.  
+- In practice Big omega is not very much useful. Big oh is used to find the worst case scenarios.
 
 <i>Example</i><br>
 int[] array= {5,7,3,2,1,8,9};<br>
-To findout an element from the array there will be best, worst and average cases possible.   
-Suppose if we search element 5, then it can be found in first attempt. i.e. best case. It is represented as Ω(1)  
-If we search for element 9, then it needs to scan the whole array. It is the worst case. It is represented as O(n).  
-For average case it is θ(n/2), which is almost θ(n) 
+- Finding an element from the array has best, worst and average cases possible.   
+- For ex searching element 5, is found in the first attempt, which is the best case. It is represented as Ω(1)  
+- For ex searching for element 9, requires scan of the entire array, which is the worst case. It is represented as O(n).  
+- For average case it is θ(n/2), which is θ(n) 
 
 <a href="algorithms/2.asymptotic_notations.md">Next: asymptotic notations</a>
 
