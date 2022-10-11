@@ -109,5 +109,5 @@ Suppose if we search element 5, then it can be found in first attempt. i.e. best
 If we search for element 9, then it needs to scan the whole array. It is the worst case. It is represented as O(n).  
 For average case it is θ(n/2), which is almost θ(n) 
 
-<a href="algorithms/asymptotic_notations.md">Next: asymptotic notations</a>
+<a href="algorithms/2.asymptotic_notations.md">Next: asymptotic notations</a>
 
