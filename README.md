@@ -90,8 +90,8 @@ ALGORITHMS
       Solution 1 :: keep n0 as 1,but make c2 = 5, c1=3  
       solution 2 :: n0 = 2, c1=3 and c2=4
 
-<img src="algorithms/big_oh.PNG" alt="Big Oh" align="middle" width="30%"><img src="big_omega.PNG" alt="Big Omega" align="middle" width="30%">
-<img src="big_theta.PNG" alt="Big Theta" align="middle" width="30%">
+<img src="algorithms/big_oh.PNG" alt="Big Oh" align="middle" width="30%"><img src="algorithms/big_omega.PNG" alt="Big Omega" align="middle" width="30%">
+<img src="algorithms/big_theta.PNG" alt="Big Theta" align="middle" width="30%">
 <br>
 <span style="display:inline-block;margin-right: 150px;" width="200px">Big Oh</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 <span style="display:inline-block;margin-right: 150px;" width="200px">Big Omega</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="display:inline-block;" width="200px">Big Theta</span>
