@@ -104,8 +104,8 @@ ALGORITHMS
 <span style="display:inline-block;margin-right: 150px;" width="200px">Big Omega</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="display:inline-block;" width="200px">Big Theta</span>
 
 <b><i>Note</b></i>  
-Big oh is used to find the worst case.It means in any scenario performance can't be worst than this for any value of n.  
-Big omega is used to find the best case. It means in any scenario performance can't be better than this for any value of n.  
+Big oh is used to find the worst case. In any scenario performance can't be worst than this for any value of n.  
+Big omega is used to find the best case. In any scenario performance can't be better than this for any value of n.  
 Big theta gives average case.  
 In practice Big omega is not of interest. Big oh is used to find the worst case scenarios.
 
