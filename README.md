@@ -17,7 +17,7 @@ User-defined data types that are defined along with their operations
 - For ADT the operations have to be defined explicitly.
 - ADT describes certain operations that can be done on the data itself
 - It is called "Abstract" because it gives an implementation-independent view
-- Examples :: Data type and operations
+- Examples :: Data type and few operations
     - Stack
       -   isFull()
       -   isEmpty() 
