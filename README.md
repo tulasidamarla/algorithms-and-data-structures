@@ -18,9 +18,15 @@ User-defined data types that are defined along with their operations
 - ADT describes certain operations that can be done on the data itself
 - It is called "Abstract" because it gives an implementation-independent view
 - Examples :: Data type and operations
-    - Stack (isFull(), isEmpty() etc)
-    - Queue (insert(), delete() etc)
-    - List (size(), get(i) etc)
+    - Stack
+      -   isFull()
+      -   isEmpty() 
+    - Queue 
+      - insert() 
+      - delete()
+    - List 
+      - size() 
+      - get(i)
 - The user or client of the ADT needs to know about the method interfaces (such as names of the methods, types of parameters, what methods  do and what are the values returned), not the actual implementation.
 
 ALGORITHMS
