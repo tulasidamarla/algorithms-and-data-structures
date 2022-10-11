@@ -42,7 +42,7 @@ ALGORITHMS
         - Execution time : as these are specific to computer
         - Number of statements executed : as this is specific to the programming language
 
-<img src="growth_rate.png" alt="Growth Rate" align="middle" width="70%">
+<img src="algorithms/growth_rate.png" alt="Growth Rate" align="middle" width="70%">
 
 - <ins>Analysis of an algorithm</ins>
     - For which inputs algorithm takes least amount of time to run (Best case)
