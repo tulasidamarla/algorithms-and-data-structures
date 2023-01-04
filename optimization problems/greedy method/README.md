@@ -14,8 +14,9 @@
         for i = 1 to n 
         {
             x = select(a)
-            feasible(x) then
-            solution = solution + x
+            if feasible(x) {
+                solution = solution + x
+            }
         }
     }
     ```
