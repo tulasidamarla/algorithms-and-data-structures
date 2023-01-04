@@ -7,3 +7,8 @@
   - For a given problem there can only be one optimal solution.
 - A problem which requires either minimum or maximum result is called Optimization problem.
 
+### Strategies to solve Optimization problems
+
+- Greedy method
+- Dynamic programming
+- Branch and Bound
