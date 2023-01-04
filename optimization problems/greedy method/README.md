@@ -6,7 +6,7 @@
   - By including all feasible inputs an optimal solution is derived
     
 
-    `a = {1,2,3,4,5}
+    ```a = {1,2,3,4,5}
     n = 5(no of elements)
 
     greedy algo (a, n) {
@@ -16,4 +16,4 @@
             feasible(x) then
             solution = solution + x
         }
-    }`
+    }```
