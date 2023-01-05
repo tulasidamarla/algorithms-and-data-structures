@@ -14,15 +14,7 @@
       // Function to get maximum profit
     private static double getMaxProfit(ItemValue[] arr, int capacity)
     {
-        final Comparator<ItemValue> itemValueComparator = (first, second) -> {
-            if ((double) first.profit / (double) first.weight < (double) second.profit / (double) second.weight) {
-                return 1;
-            } else {
-                return -1;
-            }
-        };
-
-        Arrays.sort(arr, itemValueComparator);
+        Arrays.sort(arr, (a, b) -> (int)((double)b.profit/(double)b.weight - (double)a.profit/(double)a.weight));
 
         double totalProfit = 0d;
 
