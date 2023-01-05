@@ -11,7 +11,7 @@
 ### Code
 
   ```
-      // Function to get maximum profit
+    // Function to get maximum profit
     private static double getMaxProfit(ItemValue[] arr, int capacity)
     {
         Arrays.sort(arr, (a, b) -> (int)((double)b.profit/(double)b.weight - (double)a.profit/(double)a.weight));
