@@ -34,11 +34,8 @@ public class OptimalMergePatterns {
         // create a min heap
         PriorityQueue<Integer> pq = new PriorityQueue<>();
  
-        for (int i = 0; i < size; i++) {
- 
-            // add sizes to priorityQueue
-            pq.add(files[i]);
-        }
+        //add sizes to priority queue
+        Arrays.stream(files).forEach(pq::add);
  
         // variable to count total computations
         int count = 0;
