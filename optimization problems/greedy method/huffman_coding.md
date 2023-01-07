@@ -1,4 +1,4 @@
-###Huffman coding
+### Huffman coding
 
 - Huffman coding is a variable length compression(or encoding) technique used to reduce the size of data or message.
 - Data sent over network using compression technique reduces the cost and time.
