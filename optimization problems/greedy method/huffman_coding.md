@@ -175,12 +175,9 @@ class Huffman {
         while (q.size() > 1) {
 
             // first min extract.
-            HuffmanNode x = q.peek();
-            q.poll();
-
+            HuffmanNode x = q.poll();
             // second min extract.
-            HuffmanNode y = q.peek();
-            q.poll();
+            HuffmanNode y = q.poll();
 
             // new node f which is equal
             HuffmanNode f = new HuffmanNode();
