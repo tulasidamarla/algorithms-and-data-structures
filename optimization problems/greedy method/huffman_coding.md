@@ -42,3 +42,32 @@ character | frequency | code
   - original alphabets size is 5 * 8 = 40 bits.
   - custom codes size is 5 * 3 = 15 bits.
 - Total size is 60 + 40 + 15 = 115 bits.
+- Fixed length encoding reduced the size of 20 characters from 160 bytes to 115 bytes.
+
+### Variable length encoding
+
+- Huffman encoding uses variable length encoding.
+- If less no of bytes are used for representing characters with high frequency, 
+  then total message length is reduced considerably.
+- Huffman coding follows optimal merge pattern.
+- In this approach all alphabets are arranged in the increasing order of their frequency.
+- Merge the smallest ones until a single largest node is reached to form a binary tree like below.
+
+```
+                             20
+                            /  \
+                           /    \
+                          /      \
+                         /        \
+                        9          \ 
+                       / \          \
+                      5   \          \
+                     / \   \         11
+                    /   \   \       /   \
+Frequencies        2     3   4     5     6
+          
+Alphabets            E     A     D     B     C
+
+```
+
+
