@@ -44,7 +44,7 @@ character | frequency | code
 - Total size is 60 + 40 + 15 = 115 bits.
 - Fixed length encoding reduced the size of 20 characters from 160 bytes to 115 bytes.
 
-### Variable length encoding
+#### Variable length encoding
 
 - Huffman encoding uses variable length encoding.
 - If less no of bytes are used for representing characters with high frequency, 
