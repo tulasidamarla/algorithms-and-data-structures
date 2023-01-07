@@ -56,18 +56,38 @@ character | frequency | code
 ```
                              20
                             /  \
-                           /    \
+                         0 /    \ 1
                           /      \
-                         /        \
+                         /        \ 
                         9          \ 
-                       / \          \
+                     0 / \          \
                       5   \          \
-                     / \   \         11
-                    /   \   \       /   \
-Frequencies        2     3   4     5     6
+                    0/ \ 1 \ 1       11
+                    /   \   \     0 /  \ 1
+Frequencies        2     3   4     5    6
           
-Alphabets            E     A     D     B     C
+Alphabets          E     A   D     B     C
 
 ```
+- Edges on the left side are marked 0 and on the right side are marked 1
+- Variable length encoding table can be formed from the above tree like this.
+
+```
+character | frequency | code
+----------------------------
+    A     |     3     | 001
+----------------------------
+    B     |     5     |  10
+----------------------------
+    C     |     6     |  11
+----------------------------
+    D     |     4     |  01
+----------------------------
+    E     |     2     | 000
+----------------------------
+```
+
+
+
 
 
