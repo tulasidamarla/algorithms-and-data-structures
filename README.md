@@ -51,5 +51,4 @@ ALGORITHMS
 
 <img src="algorithms/growth_rate.png" alt="Growth Rate" align="middle" width="70%">
 
-<a href="algorithms/1.asymptotic_notations.md">Next: asymptotic notations</a>
-
+<a href="algorithms/1.analysis_of_algorithms.md">Next: analysis of algorithms</a>
