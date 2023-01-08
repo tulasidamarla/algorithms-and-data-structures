@@ -2,7 +2,7 @@
 
 - Spanning tree is a tree formed out of a graph with n-1 edges where nis no of vertices.
 
-![spanning tree](/optimization problems/greedy method/spanning_tree.png?raw=true)
+![spanning tree](../greedy method/spanning_tree.png?raw=true)
 
 - The above spanning tree is derived from a weighted graph. A graph with weighted
   edges is called weighted graph.
