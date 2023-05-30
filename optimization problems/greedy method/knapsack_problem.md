@@ -10,7 +10,7 @@
 
 ### Code
 
-  ```
+  ```java
     // Function to get maximum profit
     private static double getMaxProfit(ItemValue[] arr, int capacity)
     {
