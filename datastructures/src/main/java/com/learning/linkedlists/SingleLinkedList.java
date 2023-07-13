@@ -463,7 +463,8 @@ public class SingleLinkedList<T> {
   	 * Total distance travelled by slowpointer ds= m + p*l + k (where p is an integer) 
     	 * Total distance travelled by fastpointer df = m + q*l + k (where q is an integer greater than p)
 	 * As fast pointer travelled double the speed of slow pointer, 
-         * m + q*l + k = 2(m+p*l+k) m + k = (q-2p)*l (It means that m + k is multiple of length of the loop)
+         * m + q*l + k = 2(m+p*l+k) 
+	 * m + k = (q-2p)*l (It means that m + k is multiple of length of the loop)
 	 * Now if we start slow pointer from head, to reach the start of the loop it needs m steps. 
          * Meanwhile, fast pointer is at a distance of k from start of the loop, will also move m steps. 
 	 * i.e. k+m (multiple length of the loop as defined above) steps from the start of the loop.
